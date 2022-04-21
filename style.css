@@ -1,0 +1,1570 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+/* Google Fonts: 
+font-family: 'Nunito', 
+font-family: sans-serif;
+*/
+
+/* Header */
+.cabecera {
+    display              : grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows   : 9rem;
+    background-color     : #006399;
+    align-items          : center;
+}
+
+.cabecera__logo {
+    width : 10rem;
+    height: 9rem;
+    margin: 15%;
+
+}
+
+.cabecera__navegacion {
+    margin-right: 1rem;
+}
+
+.cabecera__navegacion__lista {
+    display   : flex;
+    list-style: none;
+}
+
+.cabecera__lista__item {
+    background-color: #DD814E;
+    padding         : 1.5em 3.5em;
+    border          : 0.12em solid #032945;
+    margin-right    : 2rem;
+
+
+}
+
+.cabecera__lista__item__link {
+    text-decoration: none;
+    color          : white;
+    font-size      : 1rem;
+    font-family    : sans-serif;
+}
+
+/* BODY */
+body {
+    background-color   : white;
+    background-image   : url(./imagenes/35.png);
+    background-repeat  : no-repeat;
+    background-size    : 60%;
+    background-position: center;
+}
+
+/* Main Home*/
+
+.cuerpo__medio {
+
+    display              : grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows   : 25vh;
+    gap                  : 1vh;
+}
+
+.cuerpo__medio__uno {
+    grid-area  : 1 / 1 / 2 / 2;
+    margin-left: 2vw;
+    margin-top : 4vh;
+
+}
+
+.cuerpo__medio__uno h1 {
+    font-family: 'Nunito';
+    font-size  : 3rem;
+    color      : #DD814E;
+    text-align : center;
+}
+
+.cuerpo__medio__uno h2 {
+    font-family: 'Nunito';
+    font-size  : 2.3rem;
+    color      : #006399;
+    text-align : center;
+}
+
+.cuerpo__medio__dos {
+    grid-area: 1 / 2 / 2 / 4;
+
+}
+
+.cuerpo__medio__dos h3 {
+    font-family: 'Nunito';
+    font-size  : 2rem;
+    color      : #DD814E;
+    text-align : center;
+    margin     : 10vh;
+
+}
+
+
+.cuerpo__medio__tres {
+    grid-area: 2 / 2 / 3 / 4;
+
+}
+
+.cuerpo__medio__tres p {
+    font-family : sans-serif;
+    font-size   : 1.5rem;
+    color       : #006399;
+    text-align  : center;
+    word-spacing: 0.5rem;
+    margin-top  : 0;
+
+}
+
+
+/* Cuadros */
+.cuerpo__mano {
+    margin               : 16vh auto;
+    display              : grid;
+    grid-template-columns: 19vw 19vw 19vw;
+    grid-template-rows   : 28vh;
+    gap                  : 5%;
+    justify-content      : center;
+
+}
+
+.cuerpo__mano__uno {
+
+    background-color: #DD814E;
+    border          : 0.25em solid #006399;
+    border-radius   : 1rem;
+
+}
+
+.cuerpo__mano__uno h3 {
+    font-family    : 'Nunito';
+    font-size      : 1.5rem;
+    text-align     : center;
+    tab-size       : 1.8rem;
+    color          : white;
+    text-decoration: underline;
+    margin-top     : 2vh;
+}
+
+.cuerpo__mano__uno p {
+    font-family: sans-serif;
+    font-size  : 1.1rem;
+    color      : white;
+    text-indent: 0.5rem;
+    text-align : left;
+    line-height: 3vh;
+
+}
+
+
+.cuerpo__mano__uno__item {
+    font-family: 'sans-serif';
+    font-size  : 1.1rem;
+    line-height: 1.5rem;
+    color      : white;
+    margin-left: 2.1vw;
+
+}
+
+.cuerpo__mano__dos {
+
+    background-color: #DD814E;
+    border          : 0.25em solid #006399;
+    border-radius   : 1rem;
+
+}
+
+.cuerpo__mano__dos h3 {
+    font-family    : 'Nunito';
+    font-size      : 1.5rem;
+    text-align     : center;
+    tab-size       : 1.8rem;
+    color          : white;
+    text-decoration: underline;
+    margin-top     : 1vh;
+}
+
+.cuerpo__mano__dos p {
+    font-family: sans-serif;
+    font-size  : 1.1rem;
+    text-align : justify;
+    color      : white;
+    padding    : 0.5vw;
+    line-height: 3vh;
+
+
+}
+
+.cuerpo__mano__tres {
+
+    background-color: #DD814E;
+    border          : 0.25em solid #006399;
+    border-radius   : 1rem;
+}
+
+.cuerpo__mano__tres h3 {
+    font-family    : 'Nunito';
+    font-size      : 1.5rem;
+    text-align     : center;
+    tab-size       : 1.8rem;
+    color          : white;
+    text-decoration: underline;
+    margin-top     : 1vh;
+}
+
+.cuerpo__mano__tres p {
+    font-family: sans-serif;
+    font-size  : 1.1rem;
+    text-align : justify;
+    color      : white;
+    padding    : 0.5rem;
+    line-height: 3vh;
+}
+
+
+/* Main Nosotros */
+
+.nos__sec {
+    display       : flex;
+    flex-direction: column;
+}
+
+.nos__sec__tit {
+    text-align : center;
+    font-family: sans-serif;
+    font-size  : 2rem;
+    padding-top: 1.5rem;
+    color      : #E7690C;
+}
+
+.nos__sec__div1 {
+    text-align : left;
+    font-family: 'Nunito';
+    font-size  : 1rem;
+    font-weight: 600;
+    text-shadow: 1px;
+    color      : #006399;
+    margin     : 3vh;
+    line-height: 1.5rem;
+}
+
+.nos__sec__vision {
+    font-family: sans-serif;
+    font-size  : 1.5rem;
+    margin     : 2vh;
+    color      : #E7690C;
+    margin-left: 3vh;
+}
+
+.nos__sec__div2 {
+    text-align : left;
+    font-family: 'Nunito';
+    font-size  : 1rem;
+    font-weight: 600;
+    text-shadow: 1px;
+    color      : #006399;
+    margin     : 1vh;
+    margin-left: 3vh;
+    line-height: 1.5rem;
+
+}
+
+.nos__sec__mision {
+    font-family: sans-serif;
+    font-size  : 1.5rem;
+    margin     : 2vh;
+    margin-left: 3vh;
+    color      : #E7690C;
+}
+
+.nos__sec__div3 {
+    text-align : left;
+    font-family: 'Nunito';
+    font-size  : 1rem;
+    font-weight: 600;
+    text-shadow: 1px;
+    color      : #006399;
+    margin     : 1vh;
+    margin-left: 3vh;
+    line-height: 1.5rem;
+}
+
+.nos__sec__obj {
+    font-family: sans-serif;
+    font-size  : 1.5rem;
+    margin     : 2vh;
+    margin-left: 3vh;
+    color      : #E7690C;
+
+}
+
+.nos__sec__item {
+    text-align : left;
+    font-family: 'Nunito';
+    font-size  : 1rem;
+    font-weight: 600;
+    text-shadow: 1px;
+    color      : #006399;
+    margin-left: 2.5rem;
+
+}
+
+/* Main Destinos */
+.destinos {
+    height: 100vh;
+}
+
+.destinos h1 {
+    margin-top    : 3vh;
+    text-align    : center;
+    font-family   : sans-serif;
+    font-size     : 32px;
+    color         : #E7690C;
+    letter-spacing: 1px;
+}
+
+.destinos h2 {
+    margin-top      : 3vh;
+    text-align      : center;
+    background-color: #DD814E;
+    font-family     : sans-serif;
+    font-size       : 24px;
+    color           : #006399;
+    font-weight     : 600;
+    letter-spacing  : 5px;
+
+}
+
+.destinos p {
+    text-align      : center;
+    font-size       : 22px;
+    font-family     : 'Nunito';
+    background-color: #FFCF8E;
+    height          : 200px;
+    margin          : 5vh;
+
+}
+
+.destinos__galeria {
+    display      : flex;
+    align-content: flex-start;
+    align-items  : center;
+    overflow     : scroll;
+    height       : 55vh;
+    margin       : 5vh;
+
+}
+
+.destinos__galeria img {
+    height: 350px;
+    margin: 15px;
+}
+
+
+/* Main Ubicacion */
+
+.mando h1 {
+    text-align : center;
+    font-family: sans-serif;
+    color      : #E7690C;
+    font-size  : 32px;
+    margin-top : 2rem;
+}
+
+.mando p {
+    text-align  : left;
+    font-family : 'Nunito';
+    color       : #006399;
+    font-size   : 18px;
+    font-weight : 600;
+    line-height : 24px;
+    margin      : 1rem;
+    margin-left : 7rem;
+    margin-right: 5rem;
+
+}
+
+.ubicacion {
+    display              : grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows   : 50vh;
+    justify-items        : center;
+
+}
+
+.ubicacion__mapa {
+    width      : 50vw;
+    height     : 60vh;
+    border     : 5px solid black;
+    margin-left: 7vw;
+}
+
+.ubicacion__texto {
+    width           : 50%;
+    height          : 60vh;
+    border          : 5px solid black;
+    text-align      : center;
+    background-color: #DD814E;
+
+}
+
+.ubicacion__texto h4 {
+    font-family: sans-serif;
+    font-size  : 20px;
+    margin     : 10px;
+    line-height: 30px;
+
+}
+
+.ubicacion__texto p {
+    font-family: 'Nunito';
+    margin     : 10px;
+    font-size  : 16px;
+    line-height: 30px;
+}
+
+/* Main Contacto */
+
+.contacto h1 {
+    margin-top : 4vh;
+    text-align : center;
+    font-family: sans-serif;
+    font-size  : 32px;
+    color      : #E7690C;
+}
+
+.contacto__texto {
+    text-align : left;
+    margin     : 30px;
+    font-family: 'Nunito';
+    font-size  : 24px;
+    font-weight: 600;
+    line-height: 30px;
+    color      : #006399;
+}
+
+/* Formulario */
+.formulario {
+    width           : 50px;
+    padding         : 30px;
+    border-radius   : 20px;
+    margin          : auto;
+    background-color: #DD814E;
+}
+
+.formulario input {
+    padding         : 3px 10px;
+    border          : 1px solid #f6f6f6;
+    border-radius   : 3px;
+    background-color: #f6f6f6;
+    margin          : 8px 0;
+
+}
+
+.formulario textarea {
+    width           : 400px;
+    padding         : 3px 15px;
+    border          : 1px solid #f6f6f6;
+    border-radius   : 3px;
+    background-color: #f6f6f6;
+    margin          : 8px 0;
+    display         : inline-block;
+}
+
+.formulario input[type="submit"] {
+    width           : 100%;
+    padding         : 8px 16px;
+    margin-top      : 32px;
+    border          : 1px solid #000;
+    border-radius   : 5px;
+    display         : block;
+    color           : #DD814E;
+    background-color: #006399;
+}
+
+.formulario input[type="reset"] {
+    width           : 50%;
+    padding         : 4px 16px;
+    margin-top      : 32px;
+    border          : 1px solid #000;
+    border-radius   : 5px;
+    display         : block;
+    color           : #000;
+    background-color: cadetblue;
+}
+
+.formulario input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+/* Footer */
+
+.piePagina {
+    background-color: #006399;
+    margin-top      : 10rem;
+    width           : 100%;
+}
+
+.piePagina__section {
+    background-color: #DD814E;
+}
+
+.piePagina__section__texto {
+
+    text-align  : right;
+    margin      : 0;
+    font-family : sans-serif;
+    margin-right: 20px;
+
+}
+
+.piePagina__redes {
+    list-style: none;
+
+}
+
+.piePagina__redes__item {
+    display: inline-block;
+
+}
+
+.piePagina__div {
+    text-align: right;
+
+}
+
+.piePagina__div__texto {
+    font-size  : 16px;
+    font-family: sans-serif;
+}
+
+.piePagina__redes__item__link__icono {
+    width     : 10vh;
+    height    : 6vh;
+    margin-top: 2vh;
+
+}
+
+.centrar {
+    display        : flex;
+    justify-content: center;
+
+}
+
+/*  SOLO INDEX Y UBICACIÓN */
+
+@media only screen and (max-width: 768px) {
+
+
+    /* Barra de navegación */
+
+    .cabecera {
+        width           : 100%;
+        background-color: #006399;
+        display         : flex;
+        justify-content : space-evenly;
+    }
+
+    .cabecera__logo {
+        width : 9rem;
+        height: 8rem;
+
+    }
+
+    .cabecera__navegacion__lista {
+        flex-direction: column;
+
+
+    }
+
+    .cabecera__lista__item {
+        background-color: #DD814E;
+        padding         : 1vh;
+
+    }
+
+    .cabecera__lista__item__link {
+        text-decoration: none;
+        color          : white;
+        font-size      : 16px;
+        font-family    : sans-serif;
+    }
+
+    /* Body imagen */
+    body {
+        background-size: 300%;
+    }
+
+    /* Termina barra */
+
+    /* INDEX */
+
+    .cuerpo__medio {
+        display       : flex;
+        flex-direction: column;
+    }
+
+    .cuerpo__medio__uno h1 {
+        font-family: 'Gloria Hallelujah';
+        font-size  : 2.3rem;
+        color      : #006399;
+        text-align : center;
+    }
+
+    .cuerpo__medio__uno h2 {
+        font-family: 'Merienda';
+        font-size  : 2rem;
+        color      : #DD814E;
+        text-align : center;
+        margin-top : 5vh;
+    }
+
+    .cuerpo__medio__dos h3 {
+        font-family: 'Gloria Hallelujah';
+        font-size  : 1.6rem;
+        color      : #006399;
+        text-align : center;
+        margin     : 5vh;
+
+    }
+
+    .cuerpo__medio__tres p {
+        font-family     : 'Merienda';
+        font-size       : 1.2rem;
+        color           : #DD814E;
+        text-align      : center;
+        word-spacing    : 0.5rem;
+        margin-top      : 0;
+        background-color: aliceblue;
+
+    }
+
+    .cuerpo__mano {
+        display              : grid;
+        grid-template-columns: 80vw;
+        grid-template-rows   : 25vh;
+        gap                  : 8vh;
+    }
+
+    .cuerpo__mano__uno {
+        background-color: transparent;
+        border          : 0.15em solid #006399;
+        border-radius   : 1rem;
+    }
+
+    .cuerpo__mano__uno h3 {
+        font-family: 'Nunito';
+        font-size  : 1.2rem;
+        text-align : center;
+        color      : #032945;
+    }
+
+    .cuerpo__mano__uno p {
+        font-family: 'Nunito';
+        font-size  : 1rem;
+        color      : #032945;
+        text-align : center;
+        margin-top : 1vh;
+    }
+
+    .cuerpo__mano__uno__item {
+        font-family: 'Nunito';
+        font-size  : 1rem;
+        line-height: 1.2rem;
+        color      : #032945;
+        text-align : center;
+        list-style : none;
+    }
+
+    .cuerpo__mano__dos {
+        background-color: white;
+        border          : 0.15em solid #006399;
+        border-radius   : 1rem;
+
+    }
+
+    .cuerpo__mano__dos h3 {
+        font-family: 'Nunito';
+        font-size  : 1.2rem;
+        text-align : center;
+        color      : #032945;
+        margin-top : 1vh;
+    }
+
+    .cuerpo__mano__dos p {
+        font-family: 'Nunito';
+        font-size  : 1rem;
+        text-align : justify;
+        color      : #032945;
+        padding    : 1rem;
+    }
+
+    .cuerpo__mano__tres {
+        background-color: white;
+        border          : 0.15em solid #006399;
+        border-radius   : 1rem;
+    }
+
+    .cuerpo__mano__tres h3 {
+        font-family: 'Nunito';
+        font-size  : 1.2rem;
+        text-align : center;
+        color      : #032945;
+        margin-top : 1vh;
+    }
+
+    .cuerpo__mano__tres p {
+        font-family: 'Nunito';
+        font-size  : 1rem;
+        text-align : justify;
+        color      : #032945;
+        padding    : 1rem;
+
+    }
+
+    /* Termina index */
+
+    /* UBICACIÓN */
+
+    .mando h1 {
+        text-align : center;
+        font-family: 'Merienda';
+        color      : #006399;
+        font-size  : 1.5rem;
+        margin-top : 1rem;
+    }
+
+    .mando p {
+        text-align : justify;
+        font-family: 'Gloria Hallelujah';
+        color      : #DD814E;
+        font-size  : 18px;
+        font-weight: 300;
+        line-height: 24px;
+        margin     : 1rem;
+    }
+
+    .ubicacion {
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
+    }
+
+    .ubicacion__mapa {
+        width : 70%;
+        height: 65vh;
+        border: 5px solid black;
+        margin: 1rem;
+
+    }
+
+    .ubicacion__texto {
+        width           : 70%;
+        height          : 65vh;
+        border          : 5px solid #DD814E;
+        text-align      : center;
+        background-color: #006399;
+        margin          : 1rem;
+
+    }
+
+    .ubicacion__texto h4 {
+        font-family: sans-serif;
+        font-size  : 1rem;
+        margin     : 10px;
+        line-height: 30px;
+
+    }
+
+    .ubicacion__texto p {
+        font-family: 'Nunito';
+        margin     : 10px;
+        font-size  : 1rem;
+        line-height: 30px;
+        color      : white;
+    }
+
+    /* Termina Ubicación */
+
+
+    /* Footer */
+    .piePagina {
+        width     : 100%;
+        margin-top: 0.5vh;
+    }
+
+    .piePagina__div__texto {
+        font-family: 'Nunito';
+        font-size  : 0.8rem;
+        text-align : center;
+        margin-top : 1vh;
+        color      : white;
+    }
+
+    .piePagina__section__texto {
+        font-family: 'Nunito';
+        font-size  : 0.8;
+        text-align : center;
+        margin-left: 10vw;
+        color      : white;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* Barra de navegación */
+
+    .cabecera {
+        width                : 100%;
+        display              : grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows   : 9rem;
+        gap                  : 5rem;
+        background-color     : #006399;
+
+    }
+
+    .cabecera__navegacion__lista {
+        display        : flex;
+        list-style     : none;
+        justify-content: flex-end;
+    }
+
+    .cabecera__lista__item {
+        background-color: white;
+        padding         : 4vh 2vh;
+        border          : 0.12em solid #032945;
+        border-radius   : 2rem;
+        margin          : 1vh;
+
+
+    }
+
+    .cabecera__lista__item__link {
+        text-decoration: none;
+        color          : #DD814E;
+        font-size      : 1rem;
+        font-family    : sans-serif;
+    }
+
+    /* Body imagen */
+    body {
+        background-image: url(./imagenes/28.png);
+        background-size : 100%;
+    }
+
+    /* Home */
+    .cuerpo__medio {
+
+        display              : grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows   : 25vh;
+        gap                  : 1vh;
+    }
+
+    .cuerpo__medio__uno h1 {
+        font-family: 'Nunito';
+        font-size  : 3rem;
+        color      : #DD814E;
+        text-align : center;
+    }
+
+    .cuerpo__medio__uno h2 {
+        font-family: 'Nunito';
+        font-size  : 2.3rem;
+        color      : #006399;
+        text-align : center;
+    }
+
+
+
+    .cuerpo__medio__dos h3 {
+        font-family: 'Nunito';
+        font-size  : 2rem;
+        color      : #DD814E;
+        text-align : center;
+        margin     : 10vh;
+
+    }
+
+    .cuerpo__medio__tres p {
+        font-family : sans-serif;
+        font-size   : 1.5rem;
+        color       : #006399;
+        text-align  : center;
+        word-spacing: 0.5rem;
+        margin-top  : 0;
+
+    }
+
+    /* Cuadros */
+    .cuerpo__mano {
+        margin               : 16vh auto;
+        display              : grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows   : 100%;
+        gap                  : 3%;
+        justify-content      : center;
+    }
+
+    .cuerpo__mano__uno h3 {
+        margin-top: 1vh;
+        padding   : 0.2rem;
+    }
+
+    .cuerpo__mano__uno p {
+        text-indent: 0;
+        text-align : left;
+        line-height: 3vh;
+        margin-left: 2vh;
+
+    }
+
+    .cuerpo__mano__uno__item {
+        margin-left: 3.5vw;
+    }
+
+    .cuerpo__mano__dos h3 {
+        margin-top: 1vh;
+    }
+
+    .cuerpo__mano__dos p {
+        padding    : 0.5vw;
+        line-height: 3vh;
+        padding    : 0.5rem;
+    }
+
+    .cuerpo__mano__tres h3 {
+        margin-top: 1vh;
+    }
+
+    .cuerpo__mano__tres p {
+        padding    : 0.5rem;
+        line-height: 3vh;
+    }
+
+
+
+    /* Main Ubicacion */
+
+    .mando h1 {
+        font-size : 2rem;
+        margin-top: 2rem;
+    }
+
+    .mando p {
+        font-size   : 1.1rem;
+        font-weight : 600;
+        line-height : 1.5rem;
+        margin      : 1rem;
+        margin-left : 4%;
+        margin-right: 7%;
+
+    }
+
+    .ubicacion {
+        display              : grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows   : 80vh;
+        justify-items        : center;
+
+    }
+
+    .ubicacion__mapa {
+        width      : 100%;
+        height     : 80%;
+        margin-left: 15%;
+    }
+
+    .ubicacion__texto {
+        width : 70%;
+        height: 80%;
+
+    }
+
+    .ubicacion__texto h4 {
+        font-size  : 1.2rem;
+        margin     : 0.8rem;
+        line-height: 1.5rem;
+
+    }
+
+    .ubicacion__texto p {
+        margin     : 0.8rem;
+        font-size  : 1rem;
+        line-height: 1.5rem;
+    }
+
+    /* Footer */
+    .piePagina {
+        width     : 100%;
+        margin-top: 0.5vh;
+    }
+
+    .piePagina__div__texto {
+        font-family: 'Nunito';
+        font-size  : 0.8rem;
+        text-align : center;
+        margin-top : 1vh;
+        color      : white;
+    }
+
+    .piePagina__section__texto {
+        font-family: 'Nunito';
+        font-size  : 0.8;
+        text-align : right;
+        margin-left: 10vw;
+        color      : white;
+    }
+}
+
+
+
+/* Este no es para evaluar, solo lo hice para que no se me modifique y ver mejor yo*/
+
+@media only screen and (min-width: 1285px) {
+
+    .cabecera {
+        width                : 100%;
+        display              : grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows   : 9rem;
+        background-color     : #006399;
+        align-items          : center;
+    }
+
+    .cabecera__logo {
+        width : 10rem;
+        height: 9rem;
+        margin: 15%;
+
+    }
+
+    .cabecera__navegacion {
+        margin-right: 1rem;
+    }
+
+    .cabecera__navegacion__lista {
+        display   : flex;
+        list-style: none;
+    }
+
+    .cabecera__lista__item {
+        background-color: #DD814E;
+        padding         : 1.5em 3.5em;
+        border          : 0.12em solid #032945;
+        margin-right    : 2rem;
+
+
+    }
+
+    .cabecera__lista__item__link {
+        text-decoration: none;
+        color          : white;
+        font-size      : 1rem;
+        font-family    : sans-serif;
+    }
+
+    /* BODY */
+    body {
+        background-color   : white;
+        background-image   : url(./imagenes/35.png);
+        background-repeat  : no-repeat;
+        background-size    : 60%;
+        background-position: center;
+    }
+
+    /* Main Home*/
+
+    .cuerpo__medio {
+
+        display              : grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows   : 25vh;
+        gap                  : 1vh;
+    }
+
+    .cuerpo__medio__uno {
+        grid-area  : 1 / 1 / 2 / 2;
+        margin-left: 2vw;
+        margin-top : 4vh;
+
+    }
+
+    .cuerpo__medio__uno h1 {
+        font-family: 'Nunito';
+        font-size  : 3rem;
+        color      : #DD814E;
+        text-align : center;
+    }
+
+    .cuerpo__medio__uno h2 {
+        font-family: 'Nunito';
+        font-size  : 2.3rem;
+        color      : #006399;
+        text-align : center;
+    }
+
+    .cuerpo__medio__dos {
+        grid-area: 1 / 2 / 2 / 4;
+
+    }
+
+    .cuerpo__medio__dos h3 {
+        font-family: 'Nunito';
+        font-size  : 2rem;
+        color      : #DD814E;
+        text-align : center;
+        margin     : 10vh;
+
+    }
+
+
+    .cuerpo__medio__tres {
+        grid-area: 2 / 2 / 3 / 4;
+
+    }
+
+    .cuerpo__medio__tres p {
+        font-family : sans-serif;
+        font-size   : 1.5rem;
+        color       : #006399;
+        text-align  : center;
+        word-spacing: 0.5rem;
+        margin-top  : 0;
+
+    }
+
+
+    /* Cuadros */
+    .cuerpo__mano {
+        margin               : 16vh auto;
+        display              : grid;
+        grid-template-columns: 19vw 19vw 19vw;
+        grid-template-rows   : 28vh;
+        gap                  : 5%;
+        justify-content      : center;
+
+    }
+
+    .cuerpo__mano__uno {
+
+        background-color: #DD814E;
+        border          : 0.25em solid #006399;
+        border-radius   : 1rem;
+
+    }
+
+    .cuerpo__mano__uno h3 {
+        font-family    : 'Nunito';
+        font-size      : 1.5rem;
+        text-align     : center;
+        tab-size       : 1.8rem;
+        color          : white;
+        text-decoration: underline;
+        margin-top     : 2vh;
+    }
+
+    .cuerpo__mano__uno p {
+        font-family: sans-serif;
+        font-size  : 1.1rem;
+        color      : white;
+        text-indent: 0.5rem;
+        text-align : left;
+        line-height: 3vh;
+
+    }
+
+
+    .cuerpo__mano__uno__item {
+        font-family: 'sans-serif';
+        font-size  : 1.1rem;
+        line-height: 1.5rem;
+        color      : white;
+        margin-left: 2.1vw;
+
+    }
+
+    .cuerpo__mano__dos {
+
+        background-color: #DD814E;
+        border          : 0.25em solid #006399;
+        border-radius   : 1rem;
+
+    }
+
+    .cuerpo__mano__dos h3 {
+        font-family    : 'Nunito';
+        font-size      : 1.5rem;
+        text-align     : center;
+        tab-size       : 1.8rem;
+        color          : white;
+        text-decoration: underline;
+        margin-top     : 1vh;
+    }
+
+    .cuerpo__mano__dos p {
+        font-family: sans-serif;
+        font-size  : 1.1rem;
+        text-align : justify;
+        color      : white;
+        padding    : 0.5vw;
+        line-height: 3vh;
+
+
+    }
+
+    .cuerpo__mano__tres {
+
+        background-color: #DD814E;
+        border          : 0.25em solid #006399;
+        border-radius   : 1rem;
+    }
+
+    .cuerpo__mano__tres h3 {
+        font-family    : 'Nunito';
+        font-size      : 1.5rem;
+        text-align     : center;
+        tab-size       : 1.8rem;
+        color          : white;
+        text-decoration: underline;
+        margin-top     : 1vh;
+    }
+
+    .cuerpo__mano__tres p {
+        font-family: sans-serif;
+        font-size  : 1.1rem;
+        text-align : justify;
+        color      : white;
+        padding    : 0.5rem;
+        line-height: 3vh;
+    }
+
+
+    /* Main Nosotros */
+
+    .nos__sec {
+        display       : flex;
+        flex-direction: column;
+    }
+
+    .nos__sec__tit {
+        text-align : center;
+        font-family: sans-serif;
+        font-size  : 2rem;
+        padding-top: 1.5rem;
+        color      : #E7690C;
+    }
+
+    .nos__sec__div1 {
+        text-align : left;
+        font-family: 'Nunito';
+        font-size  : 1rem;
+        font-weight: 600;
+        text-shadow: 1px;
+        color      : #006399;
+        margin     : 3vh;
+        line-height: 1.5rem;
+    }
+
+    .nos__sec__vision {
+        font-family: sans-serif;
+        font-size  : 1.5rem;
+        margin     : 2vh;
+        color      : #E7690C;
+        margin-left: 3vh;
+    }
+
+    .nos__sec__div2 {
+        text-align : left;
+        font-family: 'Nunito';
+        font-size  : 1rem;
+        font-weight: 600;
+        text-shadow: 1px;
+        color      : #006399;
+        margin     : 1vh;
+        margin-left: 3vh;
+        line-height: 1.5rem;
+
+    }
+
+    .nos__sec__mision {
+        font-family: sans-serif;
+        font-size  : 1.5rem;
+        margin     : 2vh;
+        margin-left: 3vh;
+        color      : #E7690C;
+    }
+
+    .nos__sec__div3 {
+        text-align : left;
+        font-family: 'Nunito';
+        font-size  : 1rem;
+        font-weight: 600;
+        text-shadow: 1px;
+        color      : #006399;
+        margin     : 1vh;
+        margin-left: 3vh;
+        line-height: 1.5rem;
+    }
+
+    .nos__sec__obj {
+        font-family: sans-serif;
+        font-size  : 1.5rem;
+        margin     : 2vh;
+        margin-left: 3vh;
+        color      : #E7690C;
+
+    }
+
+    .nos__sec__item {
+        text-align : left;
+        font-family: 'Nunito';
+        font-size  : 1rem;
+        font-weight: 600;
+        text-shadow: 1px;
+        color      : #006399;
+        margin-left: 2.5rem;
+
+    }
+
+    /* Main Destinos */
+
+    .destinos h1 {
+        text-align    : center;
+        font-family   : sans-serif;
+        font-size     : 32px;
+        color         : #E7690C;
+        letter-spacing: 1px;
+    }
+
+    .destinos h2 {
+        text-align      : center;
+        background-color: #DD814E;
+        font-family     : sans-serif;
+        font-size       : 24px;
+        color           : #006399;
+        font-weight     : 600;
+        letter-spacing  : 5px;
+
+    }
+
+    .destinos p {
+        text-align: center;
+
+        font-size       : 22px;
+        font-family     : 'Nunito';
+        background-color: #FFCF8E;
+        height          : 200px;
+
+    }
+
+    .destinos__galeria {
+        display      : flex;
+        align-content: flex-start;
+        align-items  : center;
+        overflow     : scroll;
+        height       : 55vh;
+        margin       : 5vh;
+
+    }
+
+    .destinos__galeria img {
+        height: 350px;
+        margin: 15px;
+    }
+
+
+    /* Main Ubicacion */
+
+    .mando h1 {
+        text-align : center;
+        font-family: sans-serif;
+        color      : #E7690C;
+        font-size  : 32px;
+        margin-top : 2rem;
+    }
+
+    .mando p {
+        text-align  : left;
+        font-family : 'Nunito';
+        color       : #006399;
+        font-size   : 18px;
+        font-weight : 600;
+        line-height : 24px;
+        margin      : 1rem;
+        margin-left : 7rem;
+        margin-right: 5rem;
+
+    }
+
+    .ubicacion {
+        display              : grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows   : 50vh;
+        justify-items        : center;
+
+    }
+
+    .ubicacion__mapa {
+        width      : 50vw;
+        height     : 60vh;
+        border     : 5px solid black;
+        margin-left: 7vw;
+    }
+
+    .ubicacion__texto {
+        width           : 50%;
+        height          : 60vh;
+        border          : 5px solid black;
+        text-align      : center;
+        background-color: #DD814E;
+
+    }
+
+    .ubicacion__texto h4 {
+        font-family: sans-serif;
+        font-size  : 20px;
+        margin     : 10px;
+        line-height: 30px;
+
+    }
+
+    .ubicacion__texto p {
+        font-family: 'Nunito';
+        margin     : 10px;
+        font-size  : 16px;
+        line-height: 30px;
+    }
+
+    /* Main Contacto */
+
+    .contacto h1 {
+        text-align : center;
+        font-family: sans-serif;
+        font-size  : 32px;
+        color      : #E7690C;
+    }
+
+    .contacto__texto {
+        text-align : left;
+        margin     : 30px;
+        font-family: 'Nunito';
+        font-size  : 24px;
+        font-weight: 600;
+        line-height: 30px;
+        color      : #006399;
+    }
+
+    /* Formulario */
+    .formulario {
+        width           : 450px;
+        padding         : 30px;
+        border-radius   : 20px;
+        margin          : auto;
+        background-color: #DD814E;
+    }
+
+    .formulario input {
+        width           : 280px;
+        padding         : 3px 10px;
+        border          : 1px solid #f6f6f6;
+        border-radius   : 3px;
+        background-color: #f6f6f6;
+        margin          : 8px 0;
+
+    }
+
+    .formulario textarea {
+        width           : 400px;
+        padding         : 3px 15px;
+        border          : 1px solid #f6f6f6;
+        border-radius   : 3px;
+        background-color: #f6f6f6;
+        margin          : 8px 0;
+        display         : inline-block;
+    }
+
+    .formulario input[type="submit"] {
+        width           : 100%;
+        padding         : 8px 16px;
+        margin-top      : 32px;
+        border          : 1px solid #000;
+        border-radius   : 5px;
+        display         : block;
+        color           : #DD814E;
+        background-color: #006399;
+    }
+
+    .formulario input[type="reset"] {
+        width           : 50%;
+        padding         : 4px 16px;
+        margin-top      : 32px;
+        border          : 1px solid #000;
+        border-radius   : 5px;
+        display         : block;
+        color           : #000;
+        background-color: cadetblue;
+    }
+
+    .formulario input[type="submit"]:hover {
+        cursor: pointer;
+    }
+
+    /* Footer */
+
+    .piePagina {
+        background-color: #006399;
+        margin-top      : 10rem;
+        width           : 100%;
+    }
+
+    .piePagina__section {
+        background-color: #DD814E;
+    }
+
+    .piePagina__section__texto {
+
+        text-align  : right;
+        margin      : 0;
+        font-family : sans-serif;
+        margin-right: 20px;
+
+    }
+
+    .piePagina__redes {
+        list-style: none;
+
+    }
+
+    .piePagina__redes__item {
+        display: inline-block;
+
+    }
+
+    .piePagina__div {
+        text-align: right;
+
+    }
+
+    .piePagina__div__texto {
+        font-size  : 16px;
+        font-family: sans-serif;
+    }
+
+    .piePagina__redes__item__link__icono {
+        width     : 10vh;
+        height    : 6vh;
+        margin-top: 2vh;
+
+    }
+
+    .centrar {
+        display        : flex;
+        justify-content: center;
+
+    }
+}
