@@ -13,7 +13,7 @@ font-family: sans-serif;
     display              : grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows   : 9rem;
-    background-color     : #006399;
+    background-color     :#032945;
     align-items          : center;
 }
 
