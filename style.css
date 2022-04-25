@@ -856,12 +856,6 @@ body {
         font-family    : sans-serif;
     }
 
-    /* Body imagen */
-    body {
-        background-image: url(./imagenes/28.png);
-        background-size : 100%;
-    }
-
     /* Home */
     .cuerpo__medio {
 
