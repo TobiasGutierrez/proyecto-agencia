@@ -1038,6 +1038,8 @@ body {
     .piePagina {
         width     : 100%;
         margin-top: 0.5vh;
+        background: rgb(3, 41, 69);
+        background: radial-gradient(circle, rgba(3, 41, 69, 1) 22%, rgba(0, 99, 153, 1) 39%, rgba(3, 41, 69, 1) 49%, rgba(0, 99, 153, 1) 70%);
     }
 
     .piePagina__div__texto {
