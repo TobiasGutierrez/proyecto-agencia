@@ -555,7 +555,7 @@ body {
 
 }
 
-/*  SOLO INDEX Y UBICACIÓN */
+
 
 @media only screen and (max-width: 768px) {
 
@@ -808,6 +808,8 @@ body {
         color      : white;
     }
 }
+
+/* Cambios solo aca */
 
 @media only screen and (min-width: 768px) {
 
