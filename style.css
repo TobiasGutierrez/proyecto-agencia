@@ -559,7 +559,6 @@ body {
 
 @media only screen and (max-width: 768px) {
 
-
     /* Body imagen */
     body {
         background-size: 300%;
@@ -781,8 +780,6 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-
-   
 
     /* Home */
     .cuerpo__medio {
@@ -1494,8 +1491,6 @@ body {
     background: rgb(3, 41, 69);
     background: radial-gradient(circle, rgba(3, 41, 69, 1) 22%, rgba(0, 99, 153, 1) 39%, rgba(3, 41, 69, 1) 49%, rgba(0, 99, 153, 1) 70%);
 }
-
-
 
 .navbar-expand-lg .navbar-collapse {
     justify-content:center;
