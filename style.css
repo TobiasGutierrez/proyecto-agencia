@@ -758,19 +758,18 @@ body {
 
     .cuerpo__mano__uno h3 {
         margin-top: 1vh;
-        padding   : 0.2rem;
     }
 
     .cuerpo__mano__uno p {
         text-indent: 0;
         text-align : left;
         line-height: 3vh;
-        margin-left: 2vh;
+        margin-left: 1vh;
 
     }
 
     .cuerpo__mano__uno__item {
-        margin-left: 3.5vw;
+        margin-left: 0.5vw;
     }
 
     .cuerpo__mano__dos h3 {
@@ -778,9 +777,8 @@ body {
     }
 
     .cuerpo__mano__dos p {
-        padding    : 0.5vw;
-        line-height: 3vh;
         padding    : 0.5rem;
+        line-height: 3vh;
     }
 
     .cuerpo__mano__tres h3 {
@@ -1014,7 +1012,7 @@ body {
         font-size  : 1.1rem;
         line-height: 1.5rem;
         color      : white;
-        margin-left: 2.1vw;
+        
 
     }
 
@@ -1494,5 +1492,3 @@ body {
     transform: scale(1.2);
 
 } 
-
-/* pongo codigo */
