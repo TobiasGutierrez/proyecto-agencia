@@ -170,9 +170,6 @@ body {
 
 }
 
-/* Main Destinos */
-
-
 /* Main Ubicacion */
 
 .mando h1 {
@@ -481,6 +478,44 @@ body {
     /* Termina Ubicación */
 
 
+    /* Formulario */
+    .formulario {
+        width           : 360px;
+        background-color:#006399;
+        border: solid #000;
+    }
+
+    .formulario input {
+        width           : 300px;
+        padding         : 3px 10px;
+        border          : 1px solid black;
+    }
+
+    .formulario textarea {
+        width           : 300px;
+        padding         : 3px 15px;
+        border          : 1px solid black;
+    }
+
+    .formulario input[type="submit"] {
+        width           : 100%;
+        padding         : 4px 10px;
+        margin-top      : 16px;
+        color           :black;
+        background-color:cadetblue;
+    }
+
+    .formulario input[type="reset"] {
+        width           : 30%;
+        padding         : 2px 10px;
+        margin-top      : 16px;
+        
+        
+       
+    }
+
+
+
     /* Footer */
     .piePagina {
         width     : 100%;
@@ -630,6 +665,58 @@ body {
         font-size  : 1rem;
         line-height: 1.5rem;
     }
+
+        /* Formulario */
+        .formulario {
+            width           : 460px;
+            padding         : 30px;
+            border-radius   : 30px;
+            margin          : auto;
+            background-color: #DD814E;
+        }
+    
+        .formulario input {
+            width           : 400px;
+            padding         : 3px 10px;
+            border          : 1px solid black;
+            border-radius   : 3px;
+            background-color: #f6f6f6;
+            margin          : 8px 0;
+    
+        }
+    
+        .formulario textarea {
+            width           : 400px;
+            padding         : 3px 15px;
+            border          : 1px solid black;
+            border-radius   : 3px;
+            background-color: #f6f6f6;
+            margin          : 8px 0;
+            display         : inline-block;
+        }
+    
+        .formulario input[type="submit"] {
+            width           : 100%;
+            padding         : 6px 12px;
+            margin-top      : 32px;
+            border          : 1px solid #000;
+            border-radius   : 5px;
+            display         : block;
+            color           : #000;
+            background-color: cadetblue;
+        }
+    
+        .formulario input[type="reset"] {
+            width           : 50%;
+            padding         : 4px 12px;
+            margin-top      : 32px;
+            border          : 1px solid #000;
+            border-radius   : 5px;
+            display         : block;
+            color           : #000;
+            background-color: cadetblue;
+        }
+    
 
     /* Footer */
     .piePagina {
@@ -904,17 +991,17 @@ body {
 
     /* Formulario */
     .formulario {
-        width           : 450px;
+        width           : 460px;
         padding         : 30px;
-        border-radius   : 20px;
+        border-radius   : 30px;
         margin          : auto;
         background-color: #DD814E;
     }
 
     .formulario input {
-        width           : 280px;
+        width           : 380px;
         padding         : 3px 10px;
-        border          : 1px solid #f6f6f6;
+        border          : 1px solid black;
         border-radius   : 3px;
         background-color: #f6f6f6;
         margin          : 8px 0;
@@ -924,7 +1011,7 @@ body {
     .formulario textarea {
         width           : 400px;
         padding         : 3px 15px;
-        border          : 1px solid #f6f6f6;
+        border          : 1px solid black;
         border-radius   : 3px;
         background-color: #f6f6f6;
         margin          : 8px 0;
@@ -1124,58 +1211,13 @@ body {
     color: #DD814E;
 }
 
-.hoy1{
-    margin-top: 1.5rem;
-    border: solid black;
-    font-size: 1rem;
-    font-family: 'Nunito';
-    padding: 1rem;
-    color: white;
-    background: rgb(3, 41, 69);
-    background: radial-gradient(circle, rgba(3, 41, 69, 1) 22%, rgba(0, 99, 153, 1) 39%, rgba(3, 41, 69, 1) 49%, rgba(0, 99, 153, 1) 70%);
-}
-
-.hoy1 h3{
-    text-align: center;
-    background-color: #DD814E;
-}
-
-.hoy1 h4{
-    text-align: center;
-    font-weight: 1000;
-    color: #DD814E;
-}
-
-.hoy2{
-    margin-top: 1.5rem;
-    border: solid black;
-    font-size: 1rem;
-    font-family: 'Nunito';
-    padding: 1rem;
-    color: white;
-    background: rgb(3, 41, 69);
-    background: radial-gradient(circle, rgba(3, 41, 69, 1) 22%, rgba(0, 99, 153, 1) 39%, rgba(3, 41, 69, 1) 49%, rgba(0, 99, 153, 1) 70%);
-}
-
-.hoy2 h3{
-    text-align: center;
-    background-color: #DD814E;
-}
-
-.hoy2 h4{
-    text-align: center;
-    font-weight: 1000;
-    color: #DD814E;
-}
-
-
 .d-block {
     transition      : all 1s;
 
 }
 
 .d-block:hover {
-    transform: scale(1.2);
+    transform: scale(1.2); 
 
 } 
 
