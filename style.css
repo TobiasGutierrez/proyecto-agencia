@@ -28,7 +28,7 @@ font-family: 'Nunito', sans-serif;
 .nav-item {
     background-color: #DD814E;
     padding         : 0.5rem;
-    border: 0.12rem solid white;
+    border          : 0.12rem solid white;
     border-radius   : 3rem;
     margin          : 1rem;
     transition      : all 1s;
@@ -305,7 +305,7 @@ body {
     font-size  : 18px;
     font-weight: 600;
     line-height: 24px;
-    margin-top: 1rem;
+    margin-top : 1rem;
 }
 
 .ubicacion {
@@ -1020,59 +1020,60 @@ body {
 
     /* Main Destinos - Boostrap  */
 
-.destinos__tit {
-    text-align : center;
-    font-family: 'Nunito';
-    font-size  : 2.5rem;
-    color      : #DD814E;
-    margin     : 2rem;
+    .destinos__tit {
+        text-align : center;
+        font-family: 'Nunito';
+        font-size  : 2.5rem;
+        color      : #DD814E;
+        margin     : 2rem;
 
-}
+    }
 
-.col-12 {
-    background-color: #DD814E;
-    text-align      : center;
-    color           : #006399;
-    font-size       : 1.5rem;
-    border          : solid black;
-    letter-spacing  : 0.5rem;
-}
+    .col-12 {
+        background-color: #DD814E;
+        text-align      : center;
+        color           : #006399;
+        font-size       : 1.5rem;
+        border          : solid black;
+        letter-spacing  : 0.5rem;
+    }
 
-.row {
-    justify-content: center;
-}
+    .row {
+        justify-content: center;
+    }
 
-.hoy {
-    margin-top : 1.5rem;
-    border     : solid black;
-    font-size  : 1rem;
-    font-family: 'Nunito';
-    padding    : 1rem;
-    color      : white;
-    background : rgb(3, 41, 69);
-    background : radial-gradient(circle, rgba(3, 41, 69, 1) 22%, rgba(0, 99, 153, 1) 39%, rgba(3, 41, 69, 1) 49%, rgba(0, 99, 153, 1) 70%);
-}
+    .hoy {
+        margin-top : 1.5rem;
+        border     : solid black;
+        font-size  : 1rem;
+        font-family: 'Nunito';
+        padding    : 1rem;
+        color      : white;
+        background : rgb(3, 41, 69);
+        background : radial-gradient(circle, rgba(3, 41, 69, 1) 22%, rgba(0, 99, 153, 1) 39%, rgba(3, 41, 69, 1) 49%, rgba(0, 99, 153, 1) 70%);
+    }
 
-.hoy h3 {
-    text-align      : center;
-    background-color: #DD814E;
-}
+    .hoy h3 {
+        text-align      : center;
+        background-color: #DD814E;
+    }
 
-.hoy h4 {
-    text-align : center;
-    font-weight: 1000;
-    color      : #DD814E;
-}
+    .hoy h4 {
+        text-align : center;
+        font-weight: 1000;
+        color      : #DD814E;
+    }
 
-.d-block {
-    transition: all 1s;
+    .d-block {
+        transition: all 1s;
 
-}
+    }
 
-.d-block:hover {
-    transform: scale(1.2);
+    .d-block:hover {
+        transform: scale(1.2);
 
-}
+    }
+
     /* Main Ubicacion */
 
     .mando h1 {
