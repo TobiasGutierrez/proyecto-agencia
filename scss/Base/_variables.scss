@@ -1,7 +1,11 @@
+$grosor-principal: 600;
+
+
 /* MAPS */
+
 $colores: (
     color-principal: #DD814E,
-    color-secudario: #006399,
+    color-secundario: #006399,
     color-tercero: #E7690C,
     color-cuarto: black,
     color-quinto: #032945,
@@ -20,4 +24,26 @@ $alineacion-texto: (
     izquierdo: left,
     derecho: right,
     
+);
+
+$fuentes: (
+    family-uno: 'Nunito',
+    family-dos: sans-serif,
+    family-tres: 'Merienda',
+    family-cuatro: 'Gloria Hallelujah',
+
+);
+
+$margen:(
+    medio: 0.5rem,
+    uno: 1rem,
+    uno-medio: 1.5rem,
+    dos: 2rem,
+);
+
+$margen-izquierdo: (
+    medio: 0.5rem,
+    uno: 1rem,
+    uno-medio: 1.5rem,
+    dos: 2rem,
 );
