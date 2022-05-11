@@ -1,60 +1,94 @@
 /* MAPS */
+/* EXTEND */
 .nos__sec {
   display: flex;
   flex-direction: column; }
-  .nos__sec__tit {
-    color: #E7690C;
-    text-align: center;
-    font-size: 2.5rem;
-    font-family: "Nunito";
-    margin: 2rem; }
-  .nos__sec__div1 {
-    color: #006399;
-    text-align: left;
-    font-size: 1rem;
-    font-weight: 600;
-    font-family: "Nunito";
-    margin-left: 1.5rem;
-    text-shadow: 1px;
-    line-height: 1.5rem; }
-  .nos__sec__vision {
-    color: #E7690C;
-    font-size: 1.5rem;
-    font-family: sans-serif;
-    margin: 1.5rem; }
-  .nos__sec__div2 {
-    color: #006399;
-    text-align: left;
-    font-size: 1rem;
-    font-weight: 600;
-    font-family: "Nunito";
-    margin-left: 1.5rem;
-    text-shadow: 1px;
-    line-height: 1.5rem; }
-  .nos__sec__mision {
-    color: #E7690C;
-    font-size: 1.5rem;
-    font-family: sans-serif;
-    margin: 1.5rem; }
-  .nos__sec__div3 {
-    color: #006399;
-    text-align: left;
-    font-size: 1rem;
-    font-weight: 600;
-    font-family: "Nunito";
-    margin-left: 1.5rem;
-    text-shadow: 1px;
-    line-height: 1.5rem; }
-  .nos__sec__obj {
-    color: #E7690C;
-    font-size: 1.5rem;
-    font-family: sans-serif;
-    margin: 1.5rem; }
-  .nos__sec__item {
-    color: #006399;
-    text-align: left;
-    font-size: 1rem;
-    font-weight: 600;
-    font-family: "Nunito";
-    margin-left: 1.5rem;
-    text-shadow: 1px; }
+
+.nos__sec__tit {
+  color: #E7690C;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Nunito";
+  margin: 2rem; }
+
+.nos__sec__div1 {
+  color: #006399;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Nunito";
+  margin-left: 1.5rem;
+  text-shadow: 1px;
+  line-height: 1.5rem; }
+
+.nos__sec__vision {
+  color: #E7690C;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  margin: 1.5rem; }
+
+.nos__sec__div2 {
+  color: #006399;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Nunito";
+  margin-left: 1.5rem;
+  text-shadow: 1px;
+  line-height: 1.5rem; }
+
+.nos__sec__mision {
+  color: #E7690C;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  margin: 1.5rem; }
+
+.nos__sec__div3 {
+  color: #006399;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Nunito";
+  margin-left: 1.5rem;
+  text-shadow: 1px;
+  line-height: 1.5rem; }
+
+.nos__sec__obj {
+  color: #E7690C;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  margin: 1.5rem; }
+
+.nos__sec__item {
+  color: #006399;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Nunito";
+  margin-left: 1.5rem;
+  text-shadow: 1px; }
+
+.centrar {
+  display: flex;
+  justify-content: center; }
+
+.piePagina {
+  background: #032945;
+  background: radial-gradient(circle, #032945 22%, #006399 39%, #032945 49%, #006399 70%);
+  margin-top: 10rem;
+  width: 100%; }
+  .piePagina__section {
+    background-color: #DD814E; }
+    .piePagina__section__texto {
+      text-align: right;
+      margin: 0;
+      font-family: sans-serif;
+      margin-right: 20px; }
+  .piePagina__redes {
+    list-style: none; }
+    .piePagina__redes__item {
+      display: inline-block; }
+      .piePagina__redes__item__link__icono {
+        width: 5rem;
+        height: 3rem;
+        margin-top: 1rem; }

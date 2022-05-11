@@ -1,7 +1,6 @@
 .nos{
     &__sec{
-        display: flex;
-        flex-direction: column;
+        @extend %flex-colum;
     
         &__tit{
             color: map-get($colores, color-tercero);

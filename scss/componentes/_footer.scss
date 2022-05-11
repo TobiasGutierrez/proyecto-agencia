@@ -1,0 +1,35 @@
+.centrar {
+    display: flex;
+    justify-content: center;
+}
+.piePagina{
+    background: rgb(3, 41, 69);
+    background: radial-gradient(circle, rgba(3, 41, 69, 1) 22%, rgba(0, 99, 153, 1) 39%, rgba(3, 41, 69, 1) 49%, rgba(0, 99, 153, 1) 70%);
+    margin-top: 10rem;
+    width: map-get($tamanio, total);
+
+        &__section{
+            background-color: map-get($color-fondo, fondo-principal);
+
+            &__texto{
+                text-align  : right;
+                margin      : map-get($margen, cero);
+                font-family : map-get($fuentes, family-dos);
+                margin-right: 20px;
+            }
+        }
+        &__redes{
+            list-style: none;
+
+            &__item{
+                display: inline-block;
+
+                &__link__icono{
+                    width     : 5rem;
+                    height    : 3rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+}

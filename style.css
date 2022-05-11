@@ -124,6 +124,7 @@ body {
 
 /* Cuadros - boostrap */
 .card {
+    width           : 18rem;
     display         : inline-block;
     justify-content : center;
     margin          : 2rem;
@@ -273,6 +274,8 @@ body {
 }
 
 .d-block {
+    width     : 75%;
+    height    : auto;
     transition: all 1s;
 
 }
@@ -281,6 +284,7 @@ body {
     transform: scale(1.2);
 
 }
+
 
 /* Main Ubicacion */
 
@@ -296,9 +300,9 @@ body {
     text-align : left;
     font-family: 'Nunito';
     color      : #006399;
-    font-size  : 18px;
+    font-size  : 1.5rem;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 1.5rem;
     margin-top : 1rem;
 }
 
@@ -311,16 +315,17 @@ body {
 }
 
 .ubicacion__mapa {
-    width      : 50vw;
-    height     : 60vh;
+    width      : 100%;
+    height     : 26rem;
     border     : 5px solid black;
-    margin-left: 7vw;
+    margin-left: 15rem;
 }
 
 .ubicacion__texto {
     width           : 50%;
-    height          : 60vh;
+    height          : 26rem;
     border          : 5px solid black;
+    margin-left     : 5rem;
     text-align      : center;
     background-color: #DD814E;
 
@@ -337,7 +342,7 @@ body {
 .ubicacion__texto p {
     font-family: 'Nunito';
     margin     : 10px;
-    font-size  : 16px;
+    font-size  : 1rem;
     line-height: 30px;
 }
 
@@ -352,13 +357,15 @@ body {
 }
 
 .contacto__texto {
-    text-align : justify;
-    margin     : 20px;
-    font-family: 'Nunito';
-    font-size  : 1.5rem;
-    font-weight: 500;
-    line-height: 1.9rem;
-    color      : #006399;
+    text-align   : justify;
+    font-family  : 'Nunito';
+    font-size    : 1.5rem;
+    font-weight  : 500;
+    line-height  : 1.9rem;
+    color        : #006399;
+    border       : solid black;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
 }
 
 /* Formulario */
@@ -367,7 +374,6 @@ body {
     padding         : 30px;
     border-radius   : 30px;
     border          : 3px solid #DD814E;
-    margin          : auto;
     background-color: #032945;
 }
 
@@ -420,9 +426,10 @@ body {
 /* Footer */
 
 .piePagina {
-    background-color: #006399;
-    margin-top      : 10rem;
-    width           : 100%;
+    background: rgb(3, 41, 69);
+    background: radial-gradient(circle, rgba(3, 41, 69, 1) 22%, rgba(0, 99, 153, 1) 39%, rgba(3, 41, 69, 1) 49%, rgba(0, 99, 153, 1) 70%);
+    margin-top: 10rem;
+    width     : 100%;
 }
 
 .piePagina__section {
@@ -459,9 +466,9 @@ body {
 }
 
 .piePagina__redes__item__link__icono {
-    width     : 10vh;
-    height    : 6vh;
-    margin-top: 2vh;
+    width     : 5rem;
+    height    : 3rem;
+    margin-top: 1rem;
 
 }
 
@@ -1077,7 +1084,7 @@ body {
         text-align : left;
         font-family: 'Nunito';
         color      : #006399;
-        font-size  : 18px;
+        font-size  : 1rem;
         font-weight: 600;
         line-height: 24px;
         margin-top : 1rem;
@@ -1092,16 +1099,17 @@ body {
     }
 
     .ubicacion__mapa {
-        width      : 50vw;
-        height     : 60vh;
+        width      : 100%;
+        height     : 26rem;
         border     : 5px solid black;
-        margin-left: 8vw;
+        margin-left: 15rem;
     }
 
     .ubicacion__texto {
         width           : 50%;
-        height          : 60vh;
+        height          : 26rem;
         border          : 5px solid black;
+        margin-left     : 5rem;
         text-align      : center;
         background-color: #DD814E;
 
@@ -1133,13 +1141,15 @@ body {
     }
 
     .contacto__texto {
-        text-align : justify;
-        margin     : 20px;
-        font-family: 'Nunito';
-        font-size  : 1.5rem;
-        font-weight: 500;
-        line-height: 1.9rem;
-        color      : #006399;
+        text-align   : justify;
+        font-family  : 'Nunito';
+        font-size    : 1.5rem;
+        font-weight  : 500;
+        line-height  : 2rem;
+        color        : #006399;
+        border       : solid black;
+        margin-bottom: 3rem;
+        border-radius: 1rem;
     }
 
     /* Formulario */
@@ -1201,9 +1211,10 @@ body {
     /* Footer */
 
     .piePagina {
-        background-color: #006399;
-        margin-top      : 10rem;
-        width           : 100%;
+        background: rgb(3, 41, 69);
+        background: radial-gradient(circle, rgba(3, 41, 69, 1) 22%, rgba(0, 99, 153, 1) 39%, rgba(3, 41, 69, 1) 49%, rgba(0, 99, 153, 1) 70%);
+        margin-top: 10rem;
+        width     : 100%;
     }
 
     .piePagina__section {
@@ -1235,14 +1246,15 @@ body {
     }
 
     .piePagina__div__texto {
-        font-size  : 16px;
+        font-size  : 1rem;
         font-family: sans-serif;
     }
 
     .piePagina__redes__item__link__icono {
-        width     : 10vh;
-        height    : 6vh;
-        margin-top: 2vh;
+        width     : 5rem;
+        height    : 3rem;
+        margin-top: 1rem;
+
 
     }
 

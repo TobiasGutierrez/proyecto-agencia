@@ -35,6 +35,7 @@ $fuentes: (
 );
 
 $margen:(
+    cero: 0,
     medio: 0.5rem,
     uno: 1rem,
     uno-medio: 1.5rem,
@@ -47,3 +48,23 @@ $margen-izquierdo: (
     uno-medio: 1.5rem,
     dos: 2rem,
 );
+
+$tamanio: (
+    total: 100%,
+    medio: 50%,
+    cuarto: 25%,
+);
+
+$color-fondo: (
+    fondo-principal: #DD814E,
+    fondo-secundario: #032945,
+    fondo-terciario: white,
+);
+
+/* EXTEND */
+
+%flex-colum{
+    display: flex;
+    flex-direction: column;
+};
+
