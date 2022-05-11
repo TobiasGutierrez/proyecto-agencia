@@ -363,7 +363,7 @@ body {
     font-weight  : 500;
     line-height  : 1.9rem;
     color        : #006399;
-    border       : solid black;
+    border       : 2px solid black;
     margin-bottom: 3rem;
     border-radius: 1rem;
 }
@@ -1062,6 +1062,8 @@ body {
 
     .d-block {
         transition: all 1s;
+        width     : 75%;
+        height    : auto;
 
     }
 
@@ -1147,7 +1149,7 @@ body {
         font-weight  : 500;
         line-height  : 2rem;
         color        : #006399;
-        border       : solid black;
+        border       : 2px solid black;
         margin-bottom: 3rem;
         border-radius: 1rem;
     }
