@@ -12,17 +12,18 @@
             background-color: map-get($color-fondo, fondo-principal);
 
             &__texto{
-                text-align  : right;
-                margin      : map-get($margen, cero);
-                font-family : map-get($fuentes, family-dos);
-                margin-right: 20px;
+                text-align : right;
+                margin     : map-get($margen, cero);
+                font-family: map-get($fuentes, family-dos);
+                font-size  : map-get($tamanio-tipografia, texto);
             }
         }
         &__redes{
             list-style: none;
 
             &__item{
-                display: inline-block;
+                display        : inline-block;
+                justify-content: center;
 
                 &__link__icono{
                     width     : 5rem;
@@ -35,8 +36,8 @@
             text-align: right;
 
             &__texto{
-                font-family: map-get($fuentes, family-dos);
-                font-size: map-get($tamanio-tipografia, texto);
+                font-family : map-get($fuentes, family-dos);
+                font-size   : map-get($tamanio-tipografia, texto);
             
             }
         }

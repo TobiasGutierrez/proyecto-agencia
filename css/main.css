@@ -4,60 +4,29 @@
   display: flex;
   flex-direction: column; }
 
+.nos__sec__vision, .nos__sec__mision, .nos__sec__obj {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  margin: 1.5rem;
+  color: #E7690C; }
+
+.nos__sec__div1, .nos__sec__div2, .nos__sec__div3 {
+  color: #006399;
+  text-align: left;
+  font-family: 'Nunito';
+  font-size: 1rem;
+  font-weight: 600;
+  text-shadow: 1px;
+  margin-left: 1.5rem;
+  line-height: 1.5rem; }
+
+/* MIXIN */
 .nos__sec__tit {
   color: #E7690C;
   text-align: center;
   font-size: 2.5rem;
   font-family: "Nunito";
   margin: 2rem; }
-
-.nos__sec__div1 {
-  color: #006399;
-  text-align: left;
-  font-size: 1rem;
-  font-weight: 600;
-  font-family: "Nunito";
-  margin-left: 1.5rem;
-  text-shadow: 1px;
-  line-height: 1.5rem; }
-
-.nos__sec__vision {
-  color: #E7690C;
-  font-size: 1.5rem;
-  font-family: sans-serif;
-  margin: 1.5rem; }
-
-.nos__sec__div2 {
-  color: #006399;
-  text-align: left;
-  font-size: 1rem;
-  font-weight: 600;
-  font-family: "Nunito";
-  margin-left: 1.5rem;
-  text-shadow: 1px;
-  line-height: 1.5rem; }
-
-.nos__sec__mision {
-  color: #E7690C;
-  font-size: 1.5rem;
-  font-family: sans-serif;
-  margin: 1.5rem; }
-
-.nos__sec__div3 {
-  color: #006399;
-  text-align: left;
-  font-size: 1rem;
-  font-weight: 600;
-  font-family: "Nunito";
-  margin-left: 1.5rem;
-  text-shadow: 1px;
-  line-height: 1.5rem; }
-
-.nos__sec__obj {
-  color: #E7690C;
-  font-size: 1.5rem;
-  font-family: sans-serif;
-  margin: 1.5rem; }
 
 .nos__sec__item {
   color: #006399;
@@ -68,15 +37,66 @@
   margin-left: 1.5rem;
   text-shadow: 1px; }
 
+.contacto h1 {
+  text-align: center;
+  font-family: 'Nunito';
+  font-size: 2.5rem;
+  margin: 2rem;
+  color: #E7690C; }
+
+.contacto__texto {
+  text-align: justify;
+  font-family: 'Nunito';
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  color: #006399;
+  border: 2px solid black;
+  margin-bottom: 3rem;
+  border-radius: 1rem; }
+
 .formulario {
-  width: 100%;
-  padding: 8px 16px;
-  border: 1px solid black;
-  border-radius: 5px;
-  margin-top: 2rem;
-  background-color: #DD814E;
-  color: white;
-  display: block; }
+  width: 460px;
+  padding: 30px;
+  border-radius: 30px;
+  border: 3px solid #DD814E;
+  background-color: #032945;
+  margin: auto; }
+  .formulario input {
+    width: 400px;
+    padding: 3px 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: white;
+    margin: 8px 0; }
+  .formulario textarea {
+    width: 400px;
+    padding: 3px 15px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: white;
+    margin: 8px 0;
+    display: inline-block; }
+  .formulario input[type="submit"] {
+    width: 100%;
+    padding: 8px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 2rem;
+    background-color: #DD814E;
+    color: white;
+    display: block; }
+  .formulario input[type="reset"] {
+    width: 50%;
+    padding: 4px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 2rem;
+    background-color: #DD814E;
+    color: black;
+    display: block; }
+  .formulario input[type="submit"]:hover {
+    cursor: pointer; }
 
 .centrar {
   display: flex;
@@ -93,11 +113,12 @@
       text-align: right;
       margin: 0;
       font-family: sans-serif;
-      margin-right: 20px; }
+      font-size: 1rem; }
   .piePagina__redes {
     list-style: none; }
     .piePagina__redes__item {
-      display: inline-block; }
+      display: inline-block;
+      justify-content: center; }
       .piePagina__redes__item__link__icono {
         width: 5rem;
         height: 3rem;

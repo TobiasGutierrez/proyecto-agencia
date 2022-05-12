@@ -11,58 +11,27 @@
         }
 
         &__div1{
-            color: map-get($colores, color-secundario);
-            text-align: map-get($alineacion-texto, izquierdo);
-            font-size: map-get($tamanio-tipografia, texto);
-            font-weight: $grosor-principal;
-            font-family: map-get($fuentes, family-uno);
-            margin-left: map-get($margen-izquierdo, uno-medio);
-            text-shadow: 1px;
-            line-height: 1.5rem;
-
+            @extend %nos-div;
         }
 
         &__vision{
-            color: map-get($colores, color-tercero);
-            font-size: map-get($tamanio-tipografia, subtitulo);
-            font-family: map-get($fuentes, family-dos);
-            margin: map-get($margen, uno-medio);
+            @extend %nos-mvo;
         }
 
         &__div2{
-            color: map-get($colores, color-secundario);
-            text-align: map-get($alineacion-texto, izquierdo);
-            font-size: map-get($tamanio-tipografia, texto);
-            font-weight: $grosor-principal;
-            font-family: map-get($fuentes, family-uno);
-            margin-left: map-get($margen-izquierdo, uno-medio);
-            text-shadow: 1px;
-            line-height: 1.5rem;
+            @extend %nos-div;
         }
 
         &__mision{
-            color: map-get($colores, color-tercero);
-            font-size: map-get($tamanio-tipografia, subtitulo);
-            font-family: map-get($fuentes, family-dos);
-            margin: map-get($margen, uno-medio);
+            @extend %nos-mvo;
         }
 
         &__div3{
-            color: map-get($colores, color-secundario);
-            text-align: map-get($alineacion-texto, izquierdo);
-            font-size: map-get($tamanio-tipografia, texto);
-            font-weight: $grosor-principal;
-            font-family: map-get($fuentes, family-uno);
-            margin-left: map-get($margen-izquierdo, uno-medio);
-            text-shadow: 1px;
-            line-height: 1.5rem;
+            @extend %nos-div;
         }
 
         &__obj{
-            color: map-get($colores, color-tercero);
-            font-size: map-get($tamanio-tipografia, subtitulo);
-            font-family: map-get($fuentes, family-dos);
-            margin: map-get($margen, uno-medio);
+            @extend %nos-mvo;
         }
 
         &__item{
