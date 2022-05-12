@@ -68,3 +68,14 @@ $color-fondo: (
     flex-direction: column;
 };
 
+@mixin form-input ($width, $padding, $color) {
+    width: $width;
+    padding: $padding;
+    border: 1px solid black;;
+    border-radius: 5px;
+    margin-top: 2rem;
+    background-color: map-get($colores, color-principal);
+    color: $color;
+    display: block;
+};
+

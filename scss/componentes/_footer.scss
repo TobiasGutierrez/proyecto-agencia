@@ -31,5 +31,13 @@
                 }
             }
         }
+        &__div{
+            text-align: right;
 
+            &__texto{
+                font-family: map-get($fuentes, family-dos);
+                font-size: map-get($tamanio-tipografia, texto);
+            
+            }
+        }
 }
