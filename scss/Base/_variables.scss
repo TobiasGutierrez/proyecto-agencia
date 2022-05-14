@@ -1,5 +1,5 @@
 $grosor-principal: 600;
-
+$justify-center: center; 
 
 /* MAPS */
 
@@ -9,7 +9,7 @@ $colores: (
     color-tercero: #E7690C,
     color-cuarto: black,
     color-quinto: #032945,
-
+    color-sexto: white,
 );
 
 $tamanio-tipografia: (
@@ -47,6 +47,21 @@ $margen-izquierdo: (
     uno: 1rem,
     uno-medio: 1.5rem,
     dos: 2rem,
+);
+
+$rellenos:(
+    cero:0,
+    medio: 0.5rem,
+    uno: 1rem,
+    uno-medio: 1.5rem,
+    dos: 2rem,
+);
+
+$radius: (
+    uno:  1rem,
+    dos:  2rem,
+    tres: 3rem,
+    cinco: 5rem,
 );
 
 $tamanio: (
