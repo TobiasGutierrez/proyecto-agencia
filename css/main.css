@@ -1,5 +1,9 @@
 /* MAPS */
 /* EXTEND */
+.cabeza {
+  background: #032945;
+  background: radial-gradient(circle, #032945 22%, #006399 39%, #032945 49%, #006399 70%); }
+
 .nos__sec {
   display: flex;
   flex-direction: column; }
@@ -49,7 +53,7 @@
   font-family: 'Nunito';
   font-size: 1.5rem;
   font-weight: 500;
-  line-height: 1.9rem;
+  line-height: 2rem;
   color: #006399;
   border: 2px solid black;
   margin-bottom: 3rem;
@@ -65,14 +69,14 @@
   .formulario input {
     width: 400px;
     padding: 3px 10px;
-    border: 1px solid black;
+    border: 3px solid #DD814E;
     border-radius: 3px;
     background-color: white;
     margin: 8px 0; }
   .formulario textarea {
     width: 400px;
     padding: 3px 15px;
-    border: 1px solid black;
+    border: 3px solid #DD814E;
     border-radius: 3px;
     background-color: white;
     margin: 8px 0;

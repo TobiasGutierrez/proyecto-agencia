@@ -63,6 +63,11 @@ $color-fondo: (
 
 /* EXTEND */
 
+%color-gradient{
+    background: rgb(3, 41, 69);
+    background: radial-gradient(circle, rgba(3, 41, 69, 1) 22%, rgba(0, 99, 153, 1) 39%, rgba(3, 41, 69, 1) 49%, rgba(0, 99, 153, 1) 70%);
+};
+
 %flex-colum{
     display: flex;
     flex-direction: column;
@@ -89,6 +94,8 @@ $color-fondo: (
 
 
 /* MIXIN */
+
+
 @mixin contacto ($ali, $taman) {
     text-align: $ali;
     font-family: 'Nunito';
@@ -98,7 +105,7 @@ $color-fondo: (
 @mixin form-textin ($relleno) {
     width: 400px;
     padding: $relleno;
-    border: 1px solid black;
+    border: 3px solid map-get($colores, color-principal);
     border-radius: 3px;
     background-color: map-get($color-fondo, fondo-terciario);
     margin: 8px 0;
