@@ -6,7 +6,7 @@
             color: map-get($colores, color-tercero);
             text-align: map-get($alineacion-texto, centrado);
             font-size: map-get($tamanio-tipografia, titulo);
-            font-family: map-get($fuentes, family-uno);
+            font-family: 'Nunito';
             margin: map-get($margen, dos);
         }
 
@@ -39,7 +39,7 @@
             text-align: map-get($alineacion-texto, izquierdo);
             font-size: map-get($tamanio-tipografia, texto);
             font-weight: $grosor-principal;
-            font-family: map-get($fuentes, family-uno);
+            font-family: 'Nunito';
             margin-left: map-get($margen-izquierdo, uno-medio);
             text-shadow: 1px;
         }

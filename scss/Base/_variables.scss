@@ -1,5 +1,7 @@
 $grosor-principal: 600;
+$dis-inblock: inline-block;
 $justify-center: center; 
+$borde-principal: solid;
 
 /* MAPS */
 
@@ -31,7 +33,7 @@ $fuentes: (
     family-dos: sans-serif,
     family-tres: 'Merienda',
     family-cuatro: 'Gloria Hallelujah',
-
+    family-cinco: 'Courier New', 
 );
 
 $margen:(
@@ -44,6 +46,12 @@ $margen:(
 
 $margen-izquierdo: (
     medio: 0.5rem,
+    uno: 1rem,
+    uno-medio: 1.5rem,
+    dos: 2rem,
+);
+
+$alto-linea: (
     uno: 1rem,
     uno-medio: 1.5rem,
     dos: 2rem,
@@ -93,7 +101,7 @@ $color-fondo: (
     font-size  : 1.5rem;
     margin     : 1.5rem;
     color      : #E7690C;
-}
+};
 
 %nos-div{
     color      : #006399;
@@ -110,6 +118,62 @@ $color-fondo: (
 
 /* MIXIN */
 
+@mixin dis ($todos, $orden) {
+    display: $todos;
+    justify-content: $orden;
+};
+
+@mixin hoy ($kolor, $tatama) {
+    color: $kolor;
+    font-family: 'Nunito';
+    font-size: $tatama;
+    border: 3px $borde-principal map-get($colores, color-cuarto)
+};
+
+@mixin cuerpo ($dimension, $colur) {
+    font-family: 'Nunito';
+    font-size  : $dimension;
+    color      : $colur;
+    text-align : center;  
+};
+
+@mixin card ($bolde, $fon, $cul, $tran){
+    width: 18rem;
+    margin: map-get($margen, dos);
+    border-radius: map-get($radius, dos);
+    border: $bolde;
+    background-color: $fon;
+    color: $cul;
+    font-family: 'Nunito';
+    transition: $tran;
+};
+
+@mixin mando ($alin, $col, $tipo) {
+    text-align: $alin;
+    font-family: 'Nunito';
+    color: $col;
+    font-size: $tipo;
+};
+
+@mixin grid ($filas, $medida) {
+    display: grid;
+    grid-template-columns: $filas;
+    grid-template-rows   : $medida;
+};
+
+@mixin forma ($wdt, $malf) {
+    width: $wdt;
+    height: 26rem;
+    border: 5px $borde-principal map-get($colores, color-cuarto);
+    margin-left: $malf;   
+};
+
+@mixin info ($tam) {
+    font-family: 'Nunito';
+    font-size  : $tam;
+    margin     : 10px;
+    line-height: 30px;
+};
 
 @mixin contacto ($ali, $taman) {
     text-align: $ali;
@@ -120,7 +184,7 @@ $color-fondo: (
 @mixin form-textin ($relleno) {
     width: 400px;
     padding: $relleno;
-    border: 3px solid map-get($colores, color-principal);
+    border: 3px $borde-principal map-get($colores, color-principal);
     border-radius: 3px;
     background-color: map-get($color-fondo, fondo-terciario);
     margin: 8px 0;
@@ -129,7 +193,7 @@ $color-fondo: (
 @mixin form-input ($width, $padding, $color) {
     width: $width;
     padding: $padding;
-    border: 1px solid black;
+    border: 1px $borde-principal black;
     border-radius: 5px;
     margin-top: 2rem;
     background-color: map-get($colores, color-principal);

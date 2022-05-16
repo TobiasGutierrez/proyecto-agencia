@@ -1,13 +1,35 @@
-.centrar {
-    display: flex;
-    justify-content: center;
-}
 .piePagina{
-    background: rgb(3, 41, 69);
-    background: radial-gradient(circle, rgba(3, 41, 69, 1) 22%, rgba(0, 99, 153, 1) 39%, rgba(3, 41, 69, 1) 49%, rgba(0, 99, 153, 1) 70%);
+    @extend %color-gradient;
     margin-top: 10rem;
     width: map-get($tamanio, total);
 
+    .centrar {
+        @include dis (flex, center);
+    }
+        &__redes{
+            list-style: none;
+
+            &__item{
+                @include dis (inline-block, center);
+
+                &__link__icono{
+                    width     : 5rem;
+                    height    : 3rem;
+                    margin-top: 1rem;
+                    margin-right: 1rem;
+                }
+            }
+        }
+        &__div{
+            text-align: center;
+
+            &__texto{
+                font-family : map-get($fuentes, family-cinco);
+                font-size   : map-get($tamanio-tipografia, texto);
+                color: map-get($colores, color-sexto);
+            
+            }
+        }
         &__section{
             background-color: map-get($color-fondo, fondo-principal);
 
@@ -16,29 +38,22 @@
                 margin     : map-get($margen, cero);
                 font-family: map-get($fuentes, family-dos);
                 font-size  : map-get($tamanio-tipografia, texto);
-            }
-        }
-        &__redes{
-            list-style: none;
-
-            &__item{
-                display        : inline-block;
-                justify-content: center;
-
-                &__link__icono{
-                    width     : 5rem;
-                    height    : 3rem;
-                    margin-top: 1rem;
-                }
-            }
-        }
-        &__div{
-            text-align: right;
-
-            &__texto{
-                font-family : map-get($fuentes, family-dos);
-                font-size   : map-get($tamanio-tipografia, texto);
-            
+                color: map-get($colores, color-sexto);
             }
         }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

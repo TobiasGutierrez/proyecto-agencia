@@ -1,0 +1,38 @@
+.mando{
+    & h1{
+        @include mando (center, #E7690C, 2.5rem);
+        margin: map-get($margen, dos);
+    }
+
+    & p{
+        @include mando (justify, #006399, 1.2rem);
+        font-weight: $grosor-principal;
+        line-height: map-get($alto-linea, uno-medio);
+        margin-top: -1rem;
+    }
+}
+
+.ubicacion{
+    @include grid (1fr 1fr, 50vh);
+    justify-items: center;
+
+    &__mapa{
+        @include forma (100% , 15rem);
+    }
+
+    &__texto{
+        @include forma (50%, 5rem);
+        text-align: map-get($alineacion-texto, centrado);
+        background-color: map-get($color-fondo, fondo-principal);
+    
+        & h4{
+            @include info (1.2rem);
+            font-weight: $grosor-principal;
+        }
+
+        & p{
+            @include info (1rem);
+            font-weight: 200;
+        }
+    }
+}
