@@ -1,0 +1,97 @@
+@media only screen and (max-width: 768px) {
+    .cabeza{
+        background-color: map-get($colores, color-secundario);
+    
+        .nav-item{
+            @include n-item (0.3rem 0.1rem, none);
+
+        &:hover{
+            transform: none;
+        }
+            .nav-link{
+                font-size  : map-get($tamanio-tipografia, subtitulo);
+                font-family: 'Nunito';
+                color      : map-get($colores, color-sexto) !important;
+                /* no me dejaba cambiar color de letra */
+                text-align: center;
+
+            }
+        }
+    
+    }
+    
+    body{
+        background-size: 300%;
+    }
+
+    /* INDEX */
+    .cuerpo{
+        display       : flex;
+        flex-direction: column;
+
+        &__uno{
+
+            & h1{
+                font-family: 'Gloria Hallelujah';
+                @include cuer (2.3rem, #006399);
+            }
+
+            & h2{
+                @include cuer (2rem, #DD814E);
+                font-family: 'Merienda';
+                margin-top : 5vh;
+            }
+        }
+        
+        &__dos{
+            
+            & h3{
+                @include cuer (1.6rem, #006399);
+                font-family: 'Gloria Hallelujah';
+                margin     : 5vh;
+            }
+        }
+
+        &__tres{
+
+            & p{
+                @include cuer (1.2rem, #DD814E);
+                font-family: 'Merienda';
+                word-spacing    : 0.5rem;
+                margin-top      : 0;
+                background-color: aliceblue;
+            }
+        }
+    
+        .card{
+            @include dis (inline-block, center);
+            @include card (#DD814E $borde-principal, #032945, white, none);
+    
+        &:hover{
+            transform: none;
+        }
+            &-subtitle{
+                color: map-get($colores, color-principal);
+            }    
+        }
+    }
+    
+    /* Main Nosotros */
+    .nos{
+
+        &__sec{
+            display       : flex;
+            flex-direction: column;
+            align-items   : center;
+        }
+
+            &__tit{
+                @include cuerpo (2.5rem, #E7690C);
+                margin     : map-get($margen, uno);    
+            }
+    }
+
+
+
+
+}

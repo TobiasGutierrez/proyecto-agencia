@@ -307,3 +307,79 @@ body {
       font-family: sans-serif;
       font-size: 1rem;
       color: white; }
+
+@media only screen and (max-width: 768px) {
+  .cabeza {
+    background-color: #006399; }
+    .cabeza .nav-item {
+      background-color: #DD814E;
+      padding: 0.3rem 0.1rem;
+      border: 0.12rem solid white;
+      border-radius: 3rem;
+      margin: 1rem;
+      transition: none; }
+      .cabeza .nav-item:hover {
+        transform: none; }
+      .cabeza .nav-item .nav-link {
+        font-size: 1.5rem;
+        font-family: 'Nunito';
+        color: white !important;
+        /* no me dejaba cambiar color de letra */
+        text-align: center; }
+  body {
+    background-size: 300%; }
+  /* INDEX */
+  .cuerpo {
+    display: flex;
+    flex-direction: column; }
+    .cuerpo__uno h1 {
+      font-family: 'Gloria Hallelujah';
+      font-size: 2.3rem;
+      color: #006399;
+      text-align: center; }
+    .cuerpo__uno h2 {
+      font-size: 2rem;
+      color: #DD814E;
+      text-align: center;
+      font-family: 'Merienda';
+      margin-top: 5vh; }
+    .cuerpo__dos h3 {
+      font-size: 1.6rem;
+      color: #006399;
+      text-align: center;
+      font-family: 'Gloria Hallelujah';
+      margin: 5vh; }
+    .cuerpo__tres p {
+      font-size: 1.2rem;
+      color: #DD814E;
+      text-align: center;
+      font-family: 'Merienda';
+      word-spacing: 0.5rem;
+      margin-top: 0;
+      background-color: aliceblue; }
+    .cuerpo .card {
+      display: inline-block;
+      justify-content: center;
+      width: 18rem;
+      margin: 2rem;
+      border-radius: 2rem;
+      border: #DD814E solid;
+      background-color: #032945;
+      color: white;
+      font-family: 'Nunito';
+      transition: none; }
+      .cuerpo .card:hover {
+        transform: none; }
+      .cuerpo .card-subtitle {
+        color: #DD814E; }
+  /* Main Nosotros */
+  .nos__sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .nos__tit {
+    font-family: 'Nunito';
+    font-size: 2.5rem;
+    color: #E7690C;
+    text-align: center;
+    margin: 1rem; } }
