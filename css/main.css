@@ -50,7 +50,7 @@
   border: solid;
   margin-bottom: 0; }
 
-body {
+.body {
   background-color: white;
   background-image: url(/imagenes/35.png);
   background-repeat: no-repeat;
@@ -332,7 +332,7 @@ body {
           color: white !important;
           /* no me dejaba cambiar color de letra */
           text-align: center; }
-  body {
+  .body {
     background-size: 300%; }
   /* Main Index */
   .cuerpo__medio {
@@ -790,7 +790,7 @@ body {
       border: solid;
       margin-bottom: 0; }
   /* Body */
-  body {
+  .body {
     background-color: white;
     background-image: url(/imagenes/35.png);
     background-repeat: no-repeat;

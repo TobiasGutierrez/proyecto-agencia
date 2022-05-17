@@ -53,7 +53,7 @@ font-family: 'Nunito', sans-serif;
 }
 
 /* BODY */
-body {
+.body {
     background-color   : white;
     background-image   : url(./imagenes/35.png);
     background-repeat  : no-repeat;
@@ -505,7 +505,7 @@ body {
     }
 
     /* Body imagen */
-    body {
+    .body {
         background-size: 300%;
     }
 
@@ -1207,7 +1207,7 @@ body {
 
 
     /* BODY */
-    body {
+    .body {
         background-color   : white;
         background-image   : url(./imagenes/35.png);
         background-repeat  : no-repeat;
