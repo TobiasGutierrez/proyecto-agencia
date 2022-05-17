@@ -587,6 +587,9 @@
           color: white !important;
           /* no me dejaba cambiar color de letra */
           text-align: center; }
+  /* Body */
+  .body {
+    background-image: url(/imagenes/35.png); }
   /* Main Index */
   .cuerpo__medio {
     display: grid;
@@ -762,7 +765,7 @@
       text-align: center;
       color: white; } }
 
-@media only screen and (min-width: 1085px) {
+@media only screen and (min-width: 1285px) {
   /* Header */
   .cabeza {
     background: #032945;

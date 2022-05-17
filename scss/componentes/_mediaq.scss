@@ -323,6 +323,11 @@
         }
     } 
 
+    /* Body */
+    .body{
+        background-image: url(/imagenes/35.png);
+    }
+    
     /* Main Index */
     .cuerpo{
 
@@ -559,7 +564,7 @@
 
 }
 
-@media only screen and (min-width: 1085px){
+@media only screen and (min-width: 1285px){
     /* Header */
     .cabeza{
         background: rgb(3, 41, 69);
@@ -600,7 +605,7 @@
     }
 
     /* Body */
-    .body {
+    .body{
         background-color   : white;
         background-image   : url(/imagenes/35.png);
         background-repeat  : no-repeat;
