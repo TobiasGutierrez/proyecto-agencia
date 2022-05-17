@@ -38,12 +38,14 @@
         }
     }
 
+    .row{
+        justify-content: center;
+    }
+    
     .card{
         @include dis (inline-block, center);
         @include card (#032945 $borde-principal, #DD814E, white, all 1s);
-        margin-right: 3.5rem;
-       
-
+        margin-bottom: 0;
     &:hover{
         transform: scale(1.2);
     }

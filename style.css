@@ -785,7 +785,6 @@ body {
     .formulario {
         width           : 360px;
         background-color: #006399;
-        border          : none;
         margin          : auto;
         margin-bottom   : 1rem;
         border          : 2px solid #DD814E;
@@ -888,7 +887,6 @@ body {
 
     /* Home */
     .cuerpo__medio {
-
         display              : grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows   : 25vh;
@@ -1068,7 +1066,6 @@ body {
         line-height: 1.9rem;
         color      : #006399;
         border     : 2px dotted #DD814E;
-
         margin-bottom: 3rem;
         border-radius: 1rem;
     }
