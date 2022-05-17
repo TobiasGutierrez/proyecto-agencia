@@ -792,7 +792,7 @@ body {
   /* Body */
   body {
     background-color: white;
-    background-image: url(imagenes\35.png);
+    background-image: url(/imagenes/35.png);
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: center; }
