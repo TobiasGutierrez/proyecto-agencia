@@ -2,20 +2,24 @@ $grosor-principal: 600;
 $dis-inblock: inline-block;
 $justify-center: center; 
 $borde-principal: solid;
+$colprincipal: #DD814E;
+$colsecundario: #006399;
+$colblack: black;
 
 /* MAPS */
 
 $colores: (
-    color-principal: #DD814E,
-    color-secundario: #006399,
+    color-principal: $colprincipal,
+    color-secundario: $colsecundario,
     color-tercero: #E7690C,
-    color-cuarto: black,
+    color-cuarto: $colblack,
     color-quinto: #032945,
     color-sexto: white,
 );
 
 $tamanio-tipografia: (
     titulo: 2.5rem,
+    subt: 2rem,
     subtitulo: 1.5rem,
     texto: 1rem,
 

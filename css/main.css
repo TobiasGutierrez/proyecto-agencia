@@ -52,7 +52,7 @@
 
 .body {
   background-color: white;
-  background-image: url(/imagenes/logo-agencia35.png);
+  background-image: url(/imagenes/35.png);
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: center; }
@@ -333,8 +333,6 @@
           /* no me dejaba cambiar color de letra */
           text-align: center; }
   /* Body */
-  .body {
-    background-size: 100%; }
   /* Main Index */
   .cuerpo__medio {
     display: flex;
@@ -443,8 +441,8 @@
     align-items: flex-end; }
   /* Main Destinos*/
   .destinos__tit {
-    font-family: 'Nunito';
-    font-size: 2.5rem;
+    font-family: 'Merienda';
+    font-size: 2rem;
     color: #DD814E;
     text-align: center;
     margin: 2rem; }
@@ -731,7 +729,7 @@
       width: 100%;
       padding: 3px 10px;
       margin-top: 1rem;
-      border: 1px solid #000;
+      border: 1px solid black;
       border-radius: 5px;
       display: block;
       color: white;
@@ -740,7 +738,7 @@
       width: 30%;
       padding: 3px 10px;
       margin-top: 1rem;
-      border: 1px solid #000;
+      border: 1px solid black;
       border-radius: 5px;
       display: block;
       color: white;
@@ -796,7 +794,7 @@
   /* Body */
   .body {
     background-color: white;
-    background-image: url(/imagenes/logo-agencia35.png);
+    background-image: url(/imagenes/35.png);
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: center; }
@@ -928,7 +926,8 @@
     margin: 2rem; }
   .destinos .row {
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-direction: row-reverse; }
   .destinos .col-12 {
     background-color: #DD814E;
     text-align: center;
