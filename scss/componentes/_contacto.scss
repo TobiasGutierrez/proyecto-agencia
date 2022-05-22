@@ -1,8 +1,8 @@
-.contacto{ 
+.contacto {
     & h1 {
         @include contacto (center, 2.5rem);
-        margin     : map-get($margen, dos);
-        color      : map-get($colores, color-tercero);
+        margin: map-get($margen, dos);
+        color : map-get($colores, color-tercero);
     }
 
     &__texto {
@@ -16,27 +16,31 @@
     }
 }
 
-.formulario{
+.formulario {
     width           : 460px;
     padding         : 30px;
     border-radius   : 30px;
     border          : 3px $borde-principal map-get($colores, color-principal);
     background-color: map-get($colores, color-quinto);
     margin          : auto;
-    
-    & input{
+
+    & input {
         @include form-textin(3px 10px);
-    } 
-    & textarea{
+    }
+
+    & textarea {
         @include form-textin(3px 15px);
         display: $dis-inblock;
     }
-    & input[type="submit"]{
-        @include form-input(100%, 8px 16px, white);   
+
+    & input[type="submit"] {
+        @include form-input(100%, 8px 16px, white);
     }
-    & input[type="reset"]{
+
+    & input[type="reset"] {
         @include form-input(50%, 4px 16px, black);
     }
+
     & input[type="submit"]:hover {
         cursor: pointer;
     }

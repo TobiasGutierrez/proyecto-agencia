@@ -1,14 +1,14 @@
-.cabeza{
+.cabeza {
     @extend %color-gradient;
-    
-    .navbar-light .navbar-toggler{
-        margin: map-get($margen, uno);
-        background-color: map-get($color-fondo,fondo-principal);
+
+    .navbar-light .navbar-toggler {
+        margin          : map-get($margen, uno);
+        background-color: map-get($color-fondo, fondo-principal);
     }
 
-    .navbar-expand-lg .navbar-collapse{
+    .navbar-expand-lg .navbar-collapse {
         justify-content: $justify-center;
-    
+
         .nav-item {
             background-color: map-get($color-fondo, fondo-principal);
             padding         : map-get($rellenos, medio);
@@ -16,26 +16,22 @@
             border-radius   : map-get($radius, tres);
             margin          : map-get($margen, uno);
             transition      : all 1s;
-        
-        &:hover {
-            transform: scale(1.3);
-        }
-    
+
+            &:hover {
+                transform: scale(1.3);
+            }
+
             .nav-link {
                 font-size  : map-get($tamanio-tipografia, subtitulo);
                 font-family: 'Nunito';
                 color      : map-get($colores, color-sexto) !important;
                 /* no me dejaba cambiar color de letra */
             }
-        }    
+        }
     }
+
     .mx-auto {
         border       : $borde-principal;
         margin-bottom: map-get($margen, cero);
     }
 }
-
-
-
-
-

@@ -1,43 +1,43 @@
-.nos{
-    &__sec{
+.nos {
+    &__sec {
         @extend %flex-colum;
-    
-        &__tit{
-            color: map-get($colores, color-tercero);
-            text-align: map-get($alineacion-texto, centrado);
-            font-size: map-get($tamanio-tipografia, titulo);
+
+        &__tit {
+            color      : map-get($colores, color-tercero);
+            text-align : map-get($alineacion-texto, centrado);
+            font-size  : map-get($tamanio-tipografia, titulo);
             font-family: 'Nunito';
-            margin: map-get($margen, dos);
+            margin     : map-get($margen, dos);
         }
 
-        &__div1{
+        &__div1 {
             @extend %nos-div;
         }
 
-        &__vision{
+        &__vision {
             @extend %nos-mvo;
         }
 
-        &__div2{
+        &__div2 {
             @extend %nos-div;
         }
 
-        &__mision{
+        &__mision {
             @extend %nos-mvo;
         }
 
-        &__div3{
+        &__div3 {
             @extend %nos-div;
         }
 
-        &__obj{
+        &__obj {
             @extend %nos-mvo;
         }
 
-        &__item{
-            color: map-get($colores, color-secundario);
-            text-align: map-get($alineacion-texto, izquierdo);
-            font-size: map-get($tamanio-tipografia, texto);
+        &__item {
+            color      : map-get($colores, color-secundario);
+            text-align : map-get($alineacion-texto, izquierdo);
+            font-size  : map-get($tamanio-tipografia, texto);
             font-weight: $grosor-principal;
             font-family: 'Nunito';
             margin-left: map-get($margen-izquierdo, uno-medio);
