@@ -1,59 +1,47 @@
-.piePagina{
+.piePagina {
     @extend %color-gradient;
     margin-top: 10rem;
-    width: map-get($tamanio, total);
+    width     : map-get($tamanio, total);
 
     .centrar {
         @include dis (flex, center);
     }
-        &__redes{
-            list-style: none;
 
-            &__item{
-                @include dis (inline-block, center);
+    &__redes {
+        list-style: none;
 
-                &__link__icono{
-                    width     : 5rem;
-                    height    : 3rem;
-                    margin-top: 1rem;
-                    margin-right: 1rem;
-                }
+        &__item {
+            @include dis (inline-block, center);
+
+            &__link__icono {
+                width       : 5rem;
+                height      : 3rem;
+                margin-top  : 1rem;
+                margin-right: 1rem;
             }
         }
-        &__div{
-            text-align: center;
+    }
 
-            &__texto{
-                font-family : map-get($fuentes, family-cinco);
-                font-size   : map-get($tamanio-tipografia, texto);
-                color: map-get($colores, color-sexto);
-            
-            }
-        }
-        &__section{
-            background-color: map-get($color-fondo, fondo-principal);
+    &__div {
+        text-align: center;
 
-            &__texto{
-                text-align : right;
-                margin     : map-get($margen, cero);
-                font-family: map-get($fuentes, family-dos);
-                font-size  : map-get($tamanio-tipografia, texto);
-                color: map-get($colores, color-sexto);
-            }
+        &__texto {
+            font-family: map-get($fuentes, family-cinco);
+            font-size  : map-get($tamanio-tipografia, texto);
+            color      : map-get($colores, color-sexto);
+
         }
+    }
+
+    &__section {
+        background-color: map-get($color-fondo, fondo-principal);
+
+        &__texto {
+            text-align : right;
+            margin     : map-get($margen, cero);
+            font-family: map-get($fuentes, family-dos);
+            font-size  : map-get($tamanio-tipografia, texto);
+            color      : map-get($colores, color-sexto);
+        }
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

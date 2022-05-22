@@ -1,49 +1,50 @@
-.destinos{
-    &__tit{
+.destinos {
+    &__tit {
         @include cuerpo (2.5rem, #DD814E);
         margin: map-get($margen, dos);
     }
 
-        .row{
-            justify-content: $justify-center;
-            align-items: center;
+    .row {
+        justify-content: $justify-center;
+        align-items    : center;
+    }
+
+    .col-12 {
+        background-color: map-get($color-fondo, fondo-principal);
+        text-align      : map-get($alineacion-texto, centrado);
+        color           : map-get($colores, color-secundario);
+        font-size       : map-get($tamanio-tipografia, subtitulo);
+        border          : $borde-principal map-get($colores, color-cuarto);
+        letter-spacing  : 0.5rem;
+    }
+
+    .hoy {
+        @include hoy (white, 1rem);
+        @extend %color-gradient;
+        padding   : 1rem;
+        margin-top: 1.5rem;
+
+        & h3 {
+            text-align      : map-get($alineacion-texto, centrado);
+            background-color: map-get($color-fondo, fondo-principal);
         }
 
-            .col-12{
-                background-color: map-get($color-fondo, fondo-principal);
-                text-align      : map-get($alineacion-texto, centrado);
-                color           : map-get($colores, color-secundario);
-                font-size       : map-get($tamanio-tipografia, subtitulo);
-                border          : $borde-principal map-get($colores, color-cuarto);
-                letter-spacing  : 0.5rem;
-            }
+        & h4 {
+            text-align : map-get($alineacion-texto, centrado);
+            color      : map-get($colores, color-principal);
+            font-weight: 1000;
+        }
+    }
 
-                .hoy{
-                    @include hoy (white, 1rem);
-                    @extend %color-gradient;
-                    padding: 1rem;
-                    margin-top: 1.5rem;
+    .d-block {
+        width     : 75%;
+        height    : auto;
+        border    : 3px solid black;
+        transition: all 1s;
 
-                    & h3{
-                        text-align: map-get($alineacion-texto, centrado);
-                        background-color: map-get($color-fondo, fondo-principal);
-                    }
+        &:hover {
+            transform: scale(1.2);
+        }
 
-                    & h4{
-                        text-align: map-get($alineacion-texto, centrado);
-                        color: map-get($colores, color-principal);
-                        font-weight: 1000;
-                    }
-                }
-                .d-block {
-                    width     : 75%;
-                    height    : auto;
-                    border: 3px solid black;
-                    transition: all 1s;
-                    
-                    &:hover {
-                    transform: scale(1.2);
-                    }
-                
-                }                
+    }
 }

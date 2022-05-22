@@ -1,36 +1,36 @@
-.cuerpo{
-    &__medio{
+.cuerpo {
+    &__medio {
         @include grid (1fr 1fr 1fr, 25vh);
         gap: 1vh;
 
-        &__uno{
+        &__uno {
             grid-area  : 1 / 1 / 2 / 2;
             margin-left: 2vw;
             margin-top : 4vh;
 
-            & h1{
+            & h1 {
                 @include cuerpo (3rem, #DD814E);
             }
 
-            & h2{
+            & h2 {
                 @include cuerpo (2.3rem, #006399);
             }
         }
 
-        &__dos{
+        &__dos {
             grid-area: 1 / 2 / 2 / 4;
-        
-            & h3{
+
+            & h3 {
                 @include cuerpo (2rem, #DD814E);
-                margin: 10vh;
-                transform  : rotateZ(-3deg);
+                margin   : 10vh;
+                transform: rotateZ(-3deg);
             }
         }
 
-        &__tres{
+        &__tres {
             grid-area: 2 / 2 / 3 / 4;
 
-            & p{
+            & p {
                 @include cuerpo (1.5rem, #006399);
                 word-spacing: 0.5rem;
                 margin-top  : 0;
@@ -38,18 +38,20 @@
         }
     }
 
-    .row{
+    .row {
         justify-content: center;
     }
-    
-    .card{
+
+    .card {
         @include dis (inline-block, center);
         @include card (#032945 $borde-principal, #DD814E, white, all 1s);
         margin-bottom: 0;
-    &:hover{
-        transform: scale(1.2);
-    }
-        &-subtitle{
+
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        &-subtitle {
             color: map-get($colores, color-cuarto);
         }
     }

@@ -140,10 +140,10 @@
     .destinos {
         &__tit {
             font-family: 'Merienda';
-            font-size: map-get($tamanio-tipografia, subt);
-            color: map-get($colores, color-principal);
-            text-align: map-get($alineacion-texto, centrado);
-            margin: map-get($margen, dos);
+            font-size  : map-get($tamanio-tipografia, subt);
+            color      : map-get($colores, color-principal);
+            text-align : map-get($alineacion-texto, centrado);
+            margin     : map-get($margen, dos);
         }
 
         .hoy {
@@ -756,7 +756,7 @@
         .row {
             justify-content: $justify-center;
             align-items    : center;
-            flex-direction: row-reverse;
+            flex-direction : row-reverse;
         }
 
         .col-12 {
