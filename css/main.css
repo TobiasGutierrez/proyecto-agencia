@@ -52,7 +52,7 @@
 
 .body {
   background-color: white;
-  background-image: url(/imagenes/35.png);
+  background-image: url(/imagenes/logo-agencia35.png);
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: center; }
@@ -332,6 +332,9 @@
           color: white !important;
           /* no me dejaba cambiar color de letra */
           text-align: center; }
+  /* Body */
+  .body {
+    background-size: 100%; }
   /* Main Index */
   .cuerpo__medio {
     display: flex;
@@ -478,12 +481,12 @@
     align-items: center; }
     .ubicacion__mapa {
       width: 70%;
-      height: 65vh;
+      height: 75vh;
       border: 5px solid black;
       margin: 1rem; }
     .ubicacion__texto {
       width: 70%;
-      height: 65vh;
+      height: 75vh;
       border: 5px solid #DD814E;
       text-align: center;
       background-color: #006399;
@@ -513,17 +516,17 @@
     color: #006399;
     border: none; }
   .formulario {
-    width: 360px;
+    width: 340px;
     border: 2px solid #DD814E;
     background-color: #006399;
     margin: auto;
     margin-bottom: 1rem; }
     .formulario input {
-      width: 300px;
+      width: 280px;
       padding: 3px 10px;
       border: 2px solid #DD814E; }
     .formulario textarea {
-      width: 300px;
+      width: 280px;
       padding: 3px 15px;
       border: 2px solid #DD814E; }
     .formulario input[type="submit"] {
@@ -586,6 +589,8 @@
           /* no me dejaba cambiar color de letra */
           text-align: center; }
   /* Body */
+  .body {
+    background-size: 70%; }
   /* Main Index */
   .cuerpo__medio {
     display: grid;
@@ -788,6 +793,13 @@
     .cabeza .mx-auto {
       border: solid;
       margin-bottom: 0; }
+  /* Body */
+  .body {
+    background-color: white;
+    background-image: url(/imagenes/logo-agencia35.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center; }
   /* Main Index */
   .cuerpo__medio {
     display: grid;

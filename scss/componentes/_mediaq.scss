@@ -25,7 +25,11 @@
         }
     }    
     
-
+    /* Body */
+    .body{
+        background-size: 100%;
+    }
+    
     /* Main Index */
     .cuerpo{
 
@@ -183,14 +187,14 @@
     
         &__mapa{
             width : 70%;
-            height: 65vh;
+            height: 75vh;
             border: 5px solid black;
             margin: 1rem;
         }
     
         &__texto{
             width           : 70%;
-            height          : 65vh;
+            height          : 75vh;
             border          : 5px solid #DD814E;
             text-align      : center;
             background-color: #006399;
@@ -224,19 +228,19 @@
         }
     }
     .formulario{
-        width           : 360px;
+        width           : 340px;
         border          : 2px $borde-principal map-get($colores, color-principal);
         background-color: map-get($color-fondo, fondo-cuarto);
         margin          : auto;
         margin-bottom: 1rem;
         
         & input{
-            width  : 300px;
+            width  : 280px;
             padding: 3px 10px;
             border : 2px solid #DD814E;
         } 
         & textarea{
-            width  : 300px;
+            width  : 280px;
             padding: 3px 15px;
             border : 2px solid #DD814E;
         }
@@ -321,8 +325,10 @@
     } 
 
     /* Body */
+    .body{
+        background-size: 70%;
+    }
 
-    
     /* Main Index */
     .cuerpo{
 
@@ -599,6 +605,14 @@
         }
     }
 
+    /* Body */
+    .body{
+        background-color   : white;
+        background-image: url(/imagenes/logo-agencia35.png);
+        background-repeat  : no-repeat;
+        background-size    : 60%;
+        background-position: center;
+    }
 
     /* Main Index */
     .cuerpo{
