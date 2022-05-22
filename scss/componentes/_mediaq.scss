@@ -1,158 +1,164 @@
 @media only screen and (max-width: 768px) {
+
     /* Header */
-    .cabeza{
+    .cabeza {
         background: map-get($colores, color-secundario);
-        
-    
-        .navbar-expand-lg .navbar-collapse{
-            justify-content: $justify-center;    
-            
-            .nav-item{
+
+
+        .navbar-expand-lg .navbar-collapse {
+            justify-content: $justify-center;
+
+            .nav-item {
                 @include n-item (0.3rem 0.1rem);
                 transition: none;
 
-            &:hover{
-                transform: none;
-            }
-                .nav-link{
+                &:hover {
+                    transform: none;
+                }
+
+                .nav-link {
                     font-size  : map-get($tamanio-tipografia, subtitulo);
                     font-family: 'Nunito';
                     color      : map-get($colores, color-sexto) !important;
                     /* no me dejaba cambiar color de letra */
-                    text-align: center;
+                    text-align : map-get($alineacion-texto, centrado);
                 }
             }
         }
-    }    
-    
-    /* Body */
-    .body{
-        background-size: 100%;
     }
-    
-    /* Main Index */
-    .cuerpo{
 
-        &__medio{
+    /* Body */
+
+
+    /* Main Index */
+    .cuerpo {
+
+        &__medio {
             display       : flex;
             flex-direction: column;
-    
-            &__uno{
-    
-                & h1{
+
+            &__uno {
+
+                & h1 {
                     font-family: 'Gloria Hallelujah';
                     @include cuer (2.3rem, #006399);
                 }
-    
-                & h2{
-                    @include cuer (2rem, #DD814E);
+
+                & h2 {
+                    @include cuer (2rem, $colprincipal);
                     font-family: 'Merienda';
                     margin-top : 5vh;
                 }
             }
-            
-            &__dos{
-                
-                & h3{
+
+            &__dos {
+
+                & h3 {
                     @include cuer (1.6rem, #006399);
                     font-family: 'Gloria Hallelujah';
                     margin     : 5vh;
                 }
             }
-    
-            &__tres{
-    
-                & p{
-                    @include cuer (1.2rem, #DD814E);
-                    font-family: 'Merienda';
+
+            &__tres {
+
+                & p {
+                    @include cuer (1.2rem, $colprincipal);
+                    font-family     : 'Merienda';
                     word-spacing    : 0.5rem;
-                    margin-top      : 0;
+                    margin-top      : map-get($margen, cero);
                     background-color: aliceblue;
                 }
             }
         }
-        
-        .card{
-            @include dis (inline-block, center);
-            @include card (#DD814E $borde-principal, #032945, white, none);
-        
-        &:hover{
-            transform: none;
-        }
-            &-subtitle{
-                color: map-get($colores, color-principal);
-            }    
-        }           
-    }
-    
-    /* Main Nosotros */
-    .nos{
 
-        &__sec{
+        .card {
+            @include dis (inline-block, center);
+            @include card ($colprincipal $borde-principal, #032945, white, none);
+
+            &:hover {
+                transform: none;
+            }
+
+            &-subtitle {
+                color: map-get($colores, color-principal);
+            }
+        }
+    }
+
+    /* Main Nosotros */
+    .nos {
+
+        &__sec {
             display       : flex;
             flex-direction: column;
             align-items   : center;
         }
 
-            &__tit{
-                @include cuerpo (2.5rem, #E7690C);
-                margin     : map-get($margen, uno);    
-            }
-            &__div1{
-                @include nosdiv (1rem);
-            }
-    
-            &__vision{
-                @include nosv (#E7690C);
-            }
-    
-            &__div2{
-                @include nosdiv (1rem);
-            }
-    
-            &__mision{
-                @include nosv (#E7690C);
-            }
-    
-            &__div3{
-                @include nosdiv (1rem);
-            }
-    
-            &__obj{
-                @include nosv (#E7690C);
-            }
-            &__item{
-                color: map-get($colores, color-secundario);
-                text-align: map-get($alineacion-texto, izquierdo);
-                font-size: map-get($tamanio-tipografia, texto);
-                font-weight: $grosor-principal;
-                font-family: 'Nunito';
-                margin-left: map-get($margen-izquierdo, uno-medio);
-                text-shadow: 1px;
-                align-items: flex-end;
-            }
+        &__tit {
+            @include cuerpo (2.5rem, #E7690C);
+            margin: map-get($margen, uno);
+        }
+
+        &__div1 {
+            @include nosdiv (1rem);
+        }
+
+        &__vision {
+            @include nosv (#E7690C);
+        }
+
+        &__div2 {
+            @include nosdiv (1rem);
+        }
+
+        &__mision {
+            @include nosv (#E7690C);
+        }
+
+        &__div3 {
+            @include nosdiv (1rem);
+        }
+
+        &__obj {
+            @include nosv (#E7690C);
+        }
+
+        &__item {
+            color      : map-get($colores, color-secundario);
+            text-align : map-get($alineacion-texto, izquierdo);
+            font-size  : map-get($tamanio-tipografia, texto);
+            font-weight: $grosor-principal;
+            font-family: 'Nunito';
+            margin-left: map-get($margen-izquierdo, uno-medio);
+            text-shadow: 1px;
+            align-items: flex-end;
+        }
     }
 
     /* Main Destinos*/
-    .destinos{
-        &__tit{
-            @include cuerpo (2.5rem, #DD814E);
+    .destinos {
+        &__tit {
+            font-family: 'Merienda';
+            font-size: map-get($tamanio-tipografia, subt);
+            color: map-get($colores, color-principal);
+            text-align: map-get($alineacion-texto, centrado);
             margin: map-get($margen, dos);
         }
-    
-        .hoy{
+
+        .hoy {
             width     : 85%;
             margin    : auto;
             margin-top: 1rem;
-            border    : 1px solid #DD814E;
-            background: #032945;
+            border    : 1px $borde-principal map-get($colores, color-principal);
+            background: map-get($color-fondo, fondo-secundario);
         }
 
         .d-block {
             width     : 85%;
             height    : auto;
             transition: none;
-    
+
             &:hover {
                 transform: none;
             }
@@ -160,302 +166,311 @@
     }
 
     /* Main Ubicacion */
-    .mando{
-        & h1{
+    .mando {
+        & h1 {
             text-align : map-get($alineacion-texto, centrado);
             font-family: 'Merienda';
             color      : map-get($colores, color-secundario);
             font-size  : map-get($tamanio-tipografia, subtitulo);
-            margin     : map-get($margen, uno); 
+            margin     : map-get($margen, uno);
         }
-    
-        & p{
+
+        & p {
             text-align : map-get($alineacion-texto, justificado);
             font-family: 'Gloria Hallelujah';
             color      : map-get($colores, color-principal);
             font-size  : 1.1rem;
             font-weight: 300;
             line-height: 1.5rem;
-            margin     : map-get($margen, uno);   
+            margin     : map-get($margen, uno);
         }
     }
 
-    .ubicacion{
+    .ubicacion {
         display       : flex;
         flex-direction: column;
         align-items   : center;
-    
-        &__mapa{
+
+        &__mapa {
             width : 70%;
             height: 75vh;
-            border: 5px solid black;
+            border: 5px $borde-principal $colblack;
             margin: 1rem;
         }
-    
-        &__texto{
+
+        &__texto {
             width           : 70%;
             height          : 75vh;
-            border          : 5px solid #DD814E;
-            text-align      : center;
-            background-color: #006399;
-            margin          : 1rem;
-        
-            & h4{
+            border          : 5px $borde-principal map-get($colores, color-principal);
+            text-align      : map-get($alineacion-texto, centrado);
+            background-color: map-get($color-fondo, fondo-cuarto);
+            margin          : map-get($margen, uno);
+
+            & h4 {
                 @include info (1rem);
                 font-weight: $grosor-principal;
             }
-    
-            & p{
+
+            & p {
                 @include info (1rem);
-                color      : white;
+                color: map-get($colores, color-sexto);
             }
         }
     }
 
     /* Main Contacto */
-    .contacto{ 
+    .contacto {
         & h1 {
-            text-align : center;
+            text-align : map-get($alineacion-texto, centrado);
             font-family: 'Merienda';
-            font-size  : 1.5rem;
+            font-size  : map-get($tamanio-tipografia, subtitulo);
         }
-    
+
         &__texto {
             @include contacto (justify, 1.2rem);
-            font-weight  : 500;
-            color        : map-get($colores, color-secundario);
-            border       : none;
+            font-weight: 500;
+            color      : map-get($colores, color-secundario);
+            border     : none;
         }
     }
-    .formulario{
+
+    .formulario {
         width           : 340px;
         border          : 2px $borde-principal map-get($colores, color-principal);
         background-color: map-get($color-fondo, fondo-cuarto);
         margin          : auto;
-        margin-bottom: 1rem;
-        
-        & input{
+        margin-bottom   : 1rem;
+
+        & input {
             width  : 280px;
             padding: 3px 10px;
-            border : 2px solid #DD814E;
-        } 
-        & textarea{
+            border : 2px $borde-principal $colprincipal;
+        }
+
+        & textarea {
             width  : 280px;
             padding: 3px 15px;
-            border : 2px solid #DD814E;
+            border : 2px $borde-principal $colprincipal;
         }
-        & input[type="submit"]{
+
+        & input[type="submit"] {
             width           : 100%;
             padding         : 3px 10px;
             margin-top      : 16px;
-            color           : white;
-            background-color: #DD814E;
+            color           : map-get($colores, color-sexto);
+            background-color: $colprincipal;
         }
-        & input[type="reset"]{
+
+        & input[type="reset"] {
             width     : 30%;
             padding   : 1.5px 10px;
             margin-top: 16px;
         }
+
         & input[type="submit"]:hover {
             cursor: pointer;
         }
     }
 
     /* Footer */
-    .piePagina{
+    .piePagina {
         width     : 100%;
         margin-top: 0.5vh;
-        background: #006399;
+        background: map-get($color-fondo, fondo-cuarto);
 
-        .centrar{
+        .centrar {
             @include dis (flex, center);
             margin-right: 0.5rem;
         }
 
-            &__redes__item__link__icono{
-                width     : 4rem;
-                height    : 2.5rem;
-                margin-top: 1rem;
-            }
+        &__redes__item__link__icono {
+            width     : 4rem;
+            height    : 2.5rem;
+            margin-top: 1rem;
+        }
 
-            &__div__texto{
-                font-family: 'Nunito';
-                font-size  : 0.8rem;
-                text-align : center;
-                margin-top : 1vh;
-                color      : white;
-            }
+        &__div__texto {
+            font-family: 'Nunito';
+            font-size  : 0.8rem;
+            text-align : map-get($alineacion-texto, centrado);
+            margin-top : 1vh;
+            color      : map-get($colores, color-sexto);
+        }
 
-            &__section__texto{
-                font-family: 'Nunito';
-                font-size  : 0.8;
-                text-align : center;
-                margin-left: 0;
-                color      : white;
-            }
+        &__section__texto {
+            font-family: 'Nunito';
+            font-size  : 0.8;
+            text-align : map-get($alineacion-texto, centrado);
+            margin-left: 0;
+            color      : map-get($colores, color-sexto);
+        }
     }
 
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
+
     /* Header */
-    .cabeza{
+    .cabeza {
         background: map-get($colores, color-secundario);
-        
-    
-        .navbar-expand-lg .navbar-collapse{
-            justify-content: $justify-center;    
-            
-            .nav-item{
+
+
+        .navbar-expand-lg .navbar-collapse {
+            justify-content: $justify-center;
+
+            .nav-item {
                 @include n-item (0.5rem);
                 transition: none;
 
-            &:hover{
-                transform: none;
-            }
-                .nav-link{
+                &:hover {
+                    transform: none;
+                }
+
+                .nav-link {
                     font-size  : map-get($tamanio-tipografia, subtitulo);
                     font-family: 'Nunito';
                     color      : map-get($colores, color-sexto) !important;
                     /* no me dejaba cambiar color de letra */
-                    text-align: center;
+                    text-align : map-get($alineacion-texto, centrado);
                 }
             }
         }
-    } 
+    }
 
     /* Body */
-    .body{
+    .body {
         background-size: 70%;
     }
 
     /* Main Index */
-    .cuerpo{
+    .cuerpo {
 
-        &__medio{
+        &__medio {
             @include grid (1fr 1fr 1fr, 25vh);
             gap: 1vh;
-    
-            &__uno{
-    
-                & h1{
+
+            &__uno {
+
+                & h1 {
                     font-family: 'Nunito';
-                    @include cuer (3rem, #DD814E);
+                    @include cuer (3rem, $colprincipal);
                 }
-    
-                & h2{
-                    @include cuer (2.3rem, #006399);
+
+                & h2 {
+                    @include cuer (2.3rem, $colsecundario);
                     font-family: 'Nunito';
                 }
             }
-            
-            &__dos{
-                
-                & h3{
-                    @include cuer (2rem, #DD814E);
+
+            &__dos {
+
+                & h3 {
+                    @include cuer (2rem, $colprincipal);
                     font-family: 'Nunito';
                     margin     : 10vh;
-                    transform: none;
+                    transform  : none;
                 }
             }
-    
-            &__tres{
-    
-                & p{
-                    @include cuer (1.5rem, #006399);
-                    font-family: 'Merienda';
-                    word-spacing    : 0.5rem;
-                    margin-top      : 0;
+
+            &__tres {
+
+                & p {
+                    @include cuer (1.5rem, $colsecundario);
+                    font-family : 'Merienda';
+                    word-spacing: 0.5rem;
+                    margin-top  : 0;
                 }
             }
         }
-        
-        .card{
+
+        .card {
             margin-bottom: 1rem;
-            transition: none;
-        
-        &:hover{
-            transform: none;
-        }
-            &-subtitle{
+            transition   : none;
+
+            &:hover {
+                transform: none;
+            }
+
+            &-subtitle {
                 color: map-get($colores, color-principal);
-            }    
-        }           
+            }
+        }
     }
-    
+
     /* Main Nosotros */
-    .nos__sec__tit{
+    .nos__sec__tit {
         @include cuerpo (3rem, #E7690C);
         font-family: 'Nunito';
-        margin     : map-get($margen, dos); 
+        margin     : map-get($margen, dos);
     }
 
     /* Main Destinos*/
-    .destinos{
-        &__tit{
-            @include cuerpo (2rem, #DD814E);
+    .destinos {
+        &__tit {
+            @include cuerpo (2rem, $colprincipal);
             font-family: 'Nunito';
-            margin: map-get($margen, dos);
+            margin     : map-get($margen, dos);
         }
-            .col-12{
-                font-size: 1.2rem;
-            }
 
-            .hoy{
-                width     : 85%;
-                margin    : auto;
-                margin-top: 1rem;
-                border    : 1px solid #DD814E;
-                background: #006399;
-            }
+        .col-12 {
+            font-size: 1.2rem;
+        }
 
-            .d-block {
-                width     : 85%;
-                height    : auto;
-                transition: none;
-    
-                &:hover {
-                    transform: none;
-                }
+        .hoy {
+            width     : 85%;
+            margin    : auto;
+            margin-top: 1rem;
+            border    : 1px $borde-principal $colprincipal;
+            background: $colsecundario;
+        }
+
+        .d-block {
+            width     : 85%;
+            height    : auto;
+            transition: none;
+
+            &:hover {
+                transform: none;
             }
+        }
     }
 
     /* Main Ubicacion */
-    .mando{
-        & h1{
-            font-size  : 2rem;
-            margin     : map-get($margen, uno); 
+    .mando {
+        & h1 {
+            font-size: 2rem;
+            margin   : map-get($margen, uno);
         }
-    
-        & p{
+
+        & p {
             font-size  : 1.1rem;
             font-weight: 600;
             line-height: 1.5rem;
-            margin     : map-get($margen, uno);   
+            margin     : map-get($margen, uno);
         }
     }
 
-    .ubicacion{
+    .ubicacion {
         @include grid (1fr 1fr, 80vh);
         justify-items: center;
-    
-        &__mapa{
-            width : 100%;
-            height: 85%;
+
+        &__mapa {
+            width      : 100%;
+            height     : 85%;
             margin-left: 15%;
         }
-    
-        &__texto{
-            width           : 70%;
-            height          : 85%;
-        
-            & h4{
+
+        &__texto {
+            width : 70%;
+            height: 85%;
+
+            & h4 {
                 font-size  : 1.2rem;
                 margin     : 0.8rem;
                 line-height: 1.5rem;
             }
-    
-            & p{
+
+            & p {
                 margin     : 0.8rem;
                 font-size  : 1rem;
                 line-height: 1.5rem;
@@ -464,121 +479,126 @@
     }
 
     /* Main Contacto */
-    .contacto{ 
+    .contacto {
         & h1 {
-            margin     : 2rem;
-            text-align : center;
+            margin     : map-get($margen, dos);
+            text-align : map-get($alineacion-texto, centrado);
             font-family: 'Nunito';
-            font-size  : 2rem;
-            color      : #E7690C;
+            font-size  : map-get($tamanio-tipografia, subt);
+            color      : map-get($colores, color-tercero);
         }
-    
+
         &__texto {
-            text-align : justify;
-            font-family: 'Anek Bangla';
-            font-size  : 1.2rem;
-            font-weight: 100;
-            line-height: 1.9rem;
-            color      : #006399;
-            border     : 2px dotted #DD814E;
+            text-align   : justify;
+            font-family  : 'Anek Bangla';
+            font-size    : 1.2rem;
+            font-weight  : 100;
+            line-height  : 1.9rem;
+            color        : $colsecundario;
+            border       : 2px dotted $colprincipal;
             margin-bottom: 3rem;
             border-radius: 1rem;
         }
     }
-    .formulario{
+
+    .formulario {
         width           : 420px;
         padding         : 30px;
         border-radius   : 30px;
         border          : 3px $borde-principal map-get($colores, color-quinto);
         background-color: map-get($color-fondo, fondo-principal);
         margin          : auto;
-        margin-bottom: 1rem;
-        
-        & input{
-            width  : 360px;
-            padding: 3px 10px;
-            border: 2px solid #032945;
-            border-radius: 3px;
-            background-color: white;
-            margin: 8px 0;
-        } 
-        & textarea{
+        margin-bottom   : 1rem;
+
+        & input {
+            width           : 360px;
+            padding         : 3px 10px;
+            border          : 2px $borde-principal map-get($colores, color-quinto);
+            border-radius   : 3px;
+            background-color: map-get($colores, color-sexto);
+            margin          : 8px 0;
+        }
+
+        & textarea {
             width           : 360px;
             padding         : 3px 15px;
-            border          : 2px solid #032945;
+            border          : 2px $borde-principal map-get($colores, color-quinto);
             border-radius   : 3px;
-            background-color: white;
+            background-color: map-get($colores, color-sexto);
             margin          : 8px 0;
             display         : inline-block;
         }
-        & input[type="submit"]{
+
+        & input[type="submit"] {
             width           : 100%;
             padding         : 3px 10px;
             margin-top      : 1rem;
-            border          : 1px solid #000;
+            border          : 1px $borde-principal $colblack;
             border-radius   : 5px;
             display         : block;
-            color           : white;
-            background-color: #006399;
+            color           : map-get($colores, color-sexto);
+            background-color: $colsecundario;
         }
-        & input[type="reset"]{
+
+        & input[type="reset"] {
             width           : 30%;
             padding         : 3px 10px;
             margin-top      : 1rem;
-            border          : 1px solid #000;
+            border          : 1px $borde-principal $colblack;
             border-radius   : 5px;
             display         : block;
-            color           : white;
-            background-color: #006399;
+            color           : map-get($colores, color-sexto);
+            background-color: $colsecundario;
         }
     }
 
     /* Footer */
-    .piePagina{
+    .piePagina {
         width     : 100%;
         margin-top: 0.5vh;
         background: rgb(3, 41, 69);
         background: radial-gradient(circle, rgba(3, 41, 69, 1) 22%, rgba(0, 99, 153, 1) 39%, rgba(3, 41, 69, 1) 49%, rgba(0, 99, 153, 1) 70%);
 
-        .centrar{
+        .centrar {
             @include dis (flex, center);
         }
 
-            &__div__texto{
-                font-family: 'Courier New';
-                font-size  : 1rem;
-                text-align : center;
-                margin-top : 1vh;
-                color      : white;
-            }
+        &__div__texto {
+            font-family: 'Courier New';
+            font-size  : 1rem;
+            text-align : map-get($alineacion-texto, centrado);
+            margin-top : 1vh;
+            color      : map-get($colores, color-sexto);
+        }
 
-            &__section__texto{
-                font-family: 'Nunito';
-                font-size  : 1rem;
-                text-align : center;
-                color      : white;
-            }
-    }    
+        &__section__texto {
+            font-family: 'Nunito';
+            font-size  : 1rem;
+            text-align : map-get($alineacion-texto, centrado);
+            color      : map-get($colores, color-sexto);
+        }
+    }
 
-    
+
 
 
 }
 
-@media only screen and (min-width: 1285px){
+@media only screen and (min-width: 1285px) {
+
     /* Header */
-    .cabeza{
+    .cabeza {
         background: rgb(3, 41, 69);
         background: radial-gradient(circle, rgba(3, 41, 69, 1) 22%, rgba(0, 99, 153, 1) 39%, rgba(3, 41, 69, 1) 49%, rgba(0, 99, 153, 1) 70%);
-        
-        .navbar-light .navbar-toggler{
-            margin: map-get($margen, uno);
-            background-color: map-get($color-fondo,fondo-principal);
+
+        .navbar-light .navbar-toggler {
+            margin          : map-get($margen, uno);
+            background-color: map-get($color-fondo, fondo-principal);
         }
-    
-        .navbar-expand-lg .navbar-collapse{
+
+        .navbar-expand-lg .navbar-collapse {
             justify-content: $justify-center;
-        
+
             .nav-item {
                 background-color: map-get($color-fondo, fondo-principal);
                 padding         : map-get($rellenos, medio);
@@ -586,19 +606,20 @@
                 border-radius   : map-get($radius, tres);
                 margin          : map-get($margen, uno);
                 transition      : all 1s;
-            
-            &:hover {
-                transform: scale(1.3);
-            }
-        
+
+                &:hover {
+                    transform: scale(1.3);
+                }
+
                 .nav-link {
                     font-size  : map-get($tamanio-tipografia, subtitulo);
                     font-family: 'Nunito';
                     color      : map-get($colores, color-sexto) !important;
                     /* no me dejaba cambiar color de letra */
                 }
-            }    
+            }
         }
+
         .mx-auto {
             border       : $borde-principal;
             margin-bottom: map-get($margen, cero);
@@ -606,209 +627,213 @@
     }
 
     /* Body */
-    .body{
+    .body {
         background-color   : white;
-        background-image: url(/imagenes/logo-agencia35.png);
+        background-image   : url(/imagenes/35.png);
         background-repeat  : no-repeat;
         background-size    : 60%;
         background-position: center;
     }
 
     /* Main Index */
-    .cuerpo{
-        &__medio{
+    .cuerpo {
+        &__medio {
             @include grid (1fr 1fr 1fr, 25vh);
             gap: 1vh;
-    
-            &__uno{
+
+            &__uno {
                 grid-area  : 1 / 1 / 2 / 2;
                 margin-left: 2vw;
                 margin-top : 4vh;
-    
-                & h1{
-                    @include cuerpo (3rem, #DD814E);
+
+                & h1 {
+                    @include cuerpo (3rem, $colprincipal);
                 }
-    
-                & h2{
-                    @include cuerpo (2.3rem, #006399);
+
+                & h2 {
+                    @include cuerpo (2.3rem, $colsecundario);
                 }
             }
-    
-            &__dos{
+
+            &__dos {
                 grid-area: 1 / 2 / 2 / 4;
-            
-                & h3{
-                    @include cuerpo (2rem, #DD814E);
-                    margin: 10vh;
-                    transform  : rotateZ(-3deg);
+
+                & h3 {
+                    @include cuerpo (2rem, $colprincipal);
+                    margin   : 10vh;
+                    transform: rotateZ(-3deg);
                 }
             }
-    
-            &__tres{
+
+            &__tres {
                 grid-area: 2 / 2 / 3 / 4;
-    
-                & p{
-                    @include cuerpo (1.5rem, #006399);
+
+                & p {
+                    @include cuerpo (1.5rem, $colsecundario);
                     word-spacing: 0.5rem;
                     margin-top  : 0;
                 }
             }
         }
-    
-        .row{
+
+        .row {
             justify-content: center;
         }
-        
-        .card{
+
+        .card {
             @include dis (inline-block, center);
-            @include card (#032945 $borde-principal, #DD814E, white, all 1s);
+            @include card (#032945 $borde-principal, $colprincipal, white, all 1s);
             margin-bottom: 0;
-        &:hover{
-            transform: scale(1.2);
-        }
-            &-subtitle{
+
+            &:hover {
+                transform: scale(1.2);
+            }
+
+            &-subtitle {
                 color: map-get($colores, color-cuarto);
             }
         }
     }
 
     /* Main Nosotros */
-    .nos{
-        &__sec{
+    .nos {
+        &__sec {
             display       : flex;
             flex-direction: column;
-        
-            &__tit{
-                color: map-get($colores, color-tercero);
-                text-align: map-get($alineacion-texto, centrado);
-                font-size: map-get($tamanio-tipografia, titulo);
+
+            &__tit {
+                color      : map-get($colores, color-tercero);
+                text-align : map-get($alineacion-texto, centrado);
+                font-size  : map-get($tamanio-tipografia, titulo);
                 font-family: 'Nunito';
-                margin: map-get($margen, dos);
+                margin     : map-get($margen, dos);
             }
-    
-            &__div1{
+
+            &__div1 {
                 @include nosotrosdiv ($grosor-principal);
             }
-    
-            &__vision{
+
+            &__vision {
                 @include nosotrosmov (#E7690C);
             }
-    
-            &__div2{
+
+            &__div2 {
                 @include nosotrosdiv ($grosor-principal);
             }
-    
-            &__mision{
+
+            &__mision {
                 @include nosotrosmov (#E7690C);
             }
-    
-            &__div3{
+
+            &__div3 {
                 @include nosotrosdiv ($grosor-principal);
             }
-    
-            &__obj{
+
+            &__obj {
                 @include nosotrosmov (#E7690C);
             }
-    
-            &__item{
-                color: map-get($colores, color-secundario);
-                text-align: map-get($alineacion-texto, izquierdo);
-                font-size: map-get($tamanio-tipografia, texto);
+
+            &__item {
+                color      : map-get($colores, color-secundario);
+                text-align : map-get($alineacion-texto, izquierdo);
+                font-size  : map-get($tamanio-tipografia, texto);
                 font-weight: $grosor-principal;
                 font-family: 'Nunito';
                 margin-left: map-get($margen-izquierdo, uno-medio);
                 text-shadow: 1px;
             }
         }
-    
+
     }
 
     /* Main Destinos*/
-    .destinos{
-        &__tit{
-            @include cuerpo (2.5rem, #DD814E);
+    .destinos {
+        &__tit {
+            @include cuerpo (2.5rem, $colprincipal);
             margin: map-get($margen, dos);
         }
-    
-            .row{
-                justify-content: $justify-center;
-                align-items: center;
+
+        .row {
+            justify-content: $justify-center;
+            align-items    : center;
+            flex-direction: row-reverse;
+        }
+
+        .col-12 {
+            background-color: map-get($color-fondo, fondo-principal);
+            text-align      : map-get($alineacion-texto, centrado);
+            color           : map-get($colores, color-secundario);
+            font-size       : map-get($tamanio-tipografia, subtitulo);
+            border          : $borde-principal map-get($colores, color-cuarto);
+            letter-spacing  : 0.5rem;
+        }
+
+        .hoy {
+            @include hoy (white, 1rem);
+            background: rgb(3, 41, 69);
+            background: radial-gradient(circle, rgba(3, 41, 69, 1) 22%, rgba(0, 99, 153, 1) 39%, rgba(3, 41, 69, 1) 49%, rgba(0, 99, 153, 1) 70%);
+            padding   : 1rem;
+            margin-top: 1.5rem;
+
+            & h3 {
+                text-align      : map-get($alineacion-texto, centrado);
+                background-color: map-get($color-fondo, fondo-principal);
             }
-    
-                .col-12{
-                    background-color: map-get($color-fondo, fondo-principal);
-                    text-align      : map-get($alineacion-texto, centrado);
-                    color           : map-get($colores, color-secundario);
-                    font-size       : map-get($tamanio-tipografia, subtitulo);
-                    border          : $borde-principal map-get($colores, color-cuarto);
-                    letter-spacing  : 0.5rem;
-                }
-    
-                    .hoy{
-                        @include hoy (white, 1rem);
-                        background : rgb(3, 41, 69);
-                        background : radial-gradient(circle, rgba(3, 41, 69, 1) 22%, rgba(0, 99, 153, 1) 39%, rgba(3, 41, 69, 1) 49%, rgba(0, 99, 153, 1) 70%);
-                        padding: 1rem;
-                        margin-top: 1.5rem;
-    
-                        & h3{
-                            text-align: map-get($alineacion-texto, centrado);
-                            background-color: map-get($color-fondo, fondo-principal);
-                        }
-    
-                        & h4{
-                            text-align: map-get($alineacion-texto, centrado);
-                            color: map-get($colores, color-principal);
-                            font-weight: 1000;
-                        }
-                    }
-                    .d-block {
-                        width     : 75%;
-                        height    : auto;
-                        border: 3px solid black;
-                        transition: all 1s;
-                        
-                        &:hover {
-                        transform: scale(1.2);
-                        }
-                    
-                    }                
+
+            & h4 {
+                text-align : map-get($alineacion-texto, centrado);
+                color      : map-get($colores, color-principal);
+                font-weight: 1000;
+            }
+        }
+
+        .d-block {
+            width     : 75%;
+            height    : auto;
+            border    : 3px $borde-principal $colblack;
+            transition: all 1s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+
+        }
     }
 
     /* Main Ubicacion */
-    .mando{
-        & h1{
+    .mando {
+        & h1 {
             @include mando (center, #E7690C, 2.5rem);
             margin: map-get($margen, dos);
         }
-    
-        & p{
-            @include mando (justify, #006399, 1.2rem);
+
+        & p {
+            @include mando (justify, $colsecundario, 1.2rem);
             font-weight: $grosor-principal;
             line-height: map-get($alto-linea, uno-medio);
-            margin-top: -1rem;
+            margin-top : -1rem;
         }
     }
-    
-    .ubicacion{
+
+    .ubicacion {
         @include grid (1fr 1fr, 50vh);
         justify-items: center;
-    
-        &__mapa{
-            @include forma (100% , 15rem);
+
+        &__mapa {
+            @include forma (100%, 15rem);
         }
-    
-        &__texto{
+
+        &__texto {
             @include forma (50%, 5rem);
-            text-align: map-get($alineacion-texto, centrado);
+            text-align      : map-get($alineacion-texto, centrado);
             background-color: map-get($color-fondo, fondo-principal);
-        
-            & h4{
+
+            & h4 {
                 @include info (1.2rem);
                 font-weight: $grosor-principal;
             }
-    
-            & p{
+
+            & p {
                 @include info (1rem);
                 font-weight: 200;
             }
@@ -816,13 +841,13 @@
     }
 
     /* Main Contacto */
-    .contacto{ 
+    .contacto {
         & h1 {
             @include contacto (center, 2.5rem);
-            margin     : map-get($margen, dos);
-            color      : map-get($colores, color-tercero);
+            margin: map-get($margen, dos);
+            color : map-get($colores, color-tercero);
         }
-    
+
         &__texto {
             @include contacto (justify, 1.5rem);
             font-weight  : 500;
@@ -833,78 +858,85 @@
             border-radius: 1rem;
         }
     }
-    
-    .formulario{
+
+    .formulario {
         width           : 460px;
         padding         : 30px;
         border-radius   : 30px;
         border          : 3px $borde-principal map-get($colores, color-principal);
         background-color: map-get($colores, color-quinto);
         margin          : auto;
-        
-        & input{
+
+        & input {
             @include form-textin(3px 10px);
-        } 
-        & textarea{
+        }
+
+        & textarea {
             @include form-textin(3px 15px);
             display: $dis-inblock;
         }
-        & input[type="submit"]{
-            @include form-input(100%, 8px 16px, white);   
+
+        & input[type="submit"] {
+            @include form-input(100%, 8px 16px, white);
         }
-        & input[type="reset"]{
-            @include form-input(50%, 4px 16px, black);
+
+        & input[type="reset"] {
+            @include form-input(50%, 4px 16px, $colblack);
         }
+
         & input[type="submit"]:hover {
             cursor: pointer;
         }
     }
 
     /* Footer */
-    .piePagina{
+    .piePagina {
         background: rgb(3, 41, 69);
         background: radial-gradient(circle, rgba(3, 41, 69, 1) 22%, rgba(0, 99, 153, 1) 39%, rgba(3, 41, 69, 1) 49%, rgba(0, 99, 153, 1) 70%);
         margin-top: 10rem;
-        width: map-get($tamanio, total);
-    
+        width     : map-get($tamanio, total);
+
         .centrar {
             @include dis (flex, center);
         }
-            &__redes{
-                list-style: none;
-    
-                &__item{
-                    @include dis (inline-block, center);
-    
-                    &__link__icono{
-                        width     : 5rem;
-                        height    : 3rem;
-                        margin-top: 1rem;
-                        margin-right: 1rem;
-                    }
+
+        &__redes {
+            list-style: none;
+
+            &__item {
+                @include dis (inline-block, center);
+
+                &__link__icono {
+                    width       : 5rem;
+                    height      : 3rem;
+                    margin-top  : 1rem;
+                    margin-right: 1rem;
                 }
             }
-            &__div{
-                text-align: center;
-    
-                &__texto{
-                    font-family : map-get($fuentes, family-cinco);
-                    font-size   : map-get($tamanio-tipografia, texto);
-                    color: map-get($colores, color-sexto);
-                
-                }
+        }
+
+        &__div {
+            text-align: map-get($alineacion-texto, centrado);
+
+            &__texto {
+                font-family: map-get($fuentes, family-cinco);
+                font-size  : map-get($tamanio-tipografia, texto);
+                color      : map-get($colores, color-sexto);
+
             }
-            &__section{
-                background-color: map-get($color-fondo, fondo-principal);
-    
-                &__texto{
-                    text-align : right;
-                    margin     : map-get($margen, cero);
-                    font-family: map-get($fuentes, family-dos);
-                    font-size  : map-get($tamanio-tipografia, texto);
-                    color: map-get($colores, color-sexto);
-                }
+        }
+
+        &__section {
+            background-color: map-get($color-fondo, fondo-principal);
+
+            &__texto {
+                text-align : map-get($alineacion-texto, derecho);
+                margin     : map-get($margen, cero);
+                font-family: map-get($fuentes, family-dos);
+                font-size  : map-get($tamanio-tipografia, texto);
+                color      : map-get($colores, color-sexto);
             }
+        }
     }
 
 
