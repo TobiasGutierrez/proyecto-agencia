@@ -1,15 +1,14 @@
 $grosor-principal: 600;
-$dis-inblock: inline-block;
-$justify-center: center; 
-$borde-principal: solid;
-$colprincipal: #DD814E;
-$colsecundario: #006399;
-$colblack: black;
+$dis-inblock     : inline-block;
+$justify-center  : center;
+$borde-principal : solid;
+$colprincipal    : #DD814E;
+$colsecundario   : #006399;
+$colblack        : black;
 
 /* MAPS */
 
-$colores: (
-    color-principal: $colprincipal,
+$colores: (color-principal: $colprincipal,
     color-secundario: $colsecundario,
     color-tercero: #E7690C,
     color-cuarto: $colblack,
@@ -17,74 +16,64 @@ $colores: (
     color-sexto: white,
 );
 
-$tamanio-tipografia: (
-    titulo: 2.5rem,
+$tamanio-tipografia: (titulo: 2.5rem,
     subt: 2rem,
     subtitulo: 1.5rem,
     texto: 1rem,
 
 );
 
-$alineacion-texto: (
-    centrado: center,
+$alineacion-texto: (centrado: center,
     izquierdo: left,
     derecho: right,
     justificado: justify,
-    
+
 );
 
-$fuentes: (
-    family-uno: 'Nunito',
+$fuentes: (family-uno: 'Nunito',
     family-dos: sans-serif,
     family-tres: 'Merienda',
     family-cuatro: 'Gloria Hallelujah',
-    family-cinco: 'Courier New', 
+    family-cinco: 'Courier New',
 );
 
-$margen:(
-    cero: 0,
+$margen:(cero: 0,
     medio: 0.5rem,
     uno: 1rem,
     uno-medio: 1.5rem,
     dos: 2rem,
 );
 
-$margen-izquierdo: (
+$margen-izquierdo: (medio: 0.5rem,
+    uno: 1rem,
+    uno-medio: 1.5rem,
+    dos: 2rem,
+);
+
+$alto-linea: (uno: 1rem,
+    uno-medio: 1.5rem,
+    dos: 2rem,
+);
+
+$rellenos:(cero:0,
     medio: 0.5rem,
     uno: 1rem,
     uno-medio: 1.5rem,
     dos: 2rem,
 );
 
-$alto-linea: (
-    uno: 1rem,
-    uno-medio: 1.5rem,
+$radius: (uno: 1rem,
     dos: 2rem,
-);
-
-$rellenos:(
-    cero:0,
-    medio: 0.5rem,
-    uno: 1rem,
-    uno-medio: 1.5rem,
-    dos: 2rem,
-);
-
-$radius: (
-    uno:  1rem,
-    dos:  2rem,
     tres: 3rem,
     cinco: 5rem,
 );
 
-$tamanio: (
-    total: 100%,
+$tamanio: (total: 100%,
     medio: 50%,
     cuarto: 25%,
 );
 
-$color-fondo: (
-    fondo-principal: #DD814E,
+$color-fondo: (fondo-principal: #DD814E,
     fondo-secundario: #032945,
     fondo-terciario: white,
     fondo-cuarto: #006399,
@@ -92,31 +81,39 @@ $color-fondo: (
 
 /* EXTEND */
 
-%color-gradient{
+%color-gradient {
     background: rgb(3, 41, 69);
     background: radial-gradient(circle, rgba(3, 41, 69, 1) 22%, rgba(0, 99, 153, 1) 39%, rgba(3, 41, 69, 1) 49%, rgba(0, 99, 153, 1) 70%);
-};
+}
 
-%flex-colum{
-    display: flex;
+;
+
+%flex-colum {
+    display       : flex;
     flex-direction: column;
-};
+}
 
-%n-link{
+;
+
+%n-link {
     font-size  : map-get($tamanio-tipografia, subtitulo);
     font-family: 'Nunito';
     color      : map-get($colores, color-sexto) !important;
     /* no me dejaba cambiar color de letra */
-};
+}
 
-%nos-mvo{
+;
+
+%nos-mvo {
     font-family: sans-serif;
     font-size  : 1.5rem;
     margin     : 1.5rem;
     color      : #E7690C;
-};
+}
 
-%nos-div{
+;
+
+%nos-div {
     color      : #006399;
     text-align : left;
     font-family: 'Nunito';
@@ -125,141 +122,178 @@ $color-fondo: (
     text-shadow: 1px;
     margin-left: 1.5rem;
     line-height: 1.5rem;
-};
+}
+
+;
 
 
 
 /* MIXIN */
-@mixin n-item ($reyen){
+@mixin n-item ($reyen) {
     background-color: map-get($colores, color-principal);
     padding         : $reyen;
     border          : 0.12rem $borde-principal map-get($colores, color-sexto);
     border-radius   : map-get($radius, tres);
-    margin          : map-get($margen, uno);    
-};
+    margin          : map-get($margen, uno);
+}
+
+;
 
 @mixin dis ($todos, $orden) {
-    display: $todos;
+    display        : $todos;
     justify-content: $orden;
-};
+}
+
+;
 
 @mixin hoy ($kolor, $tatama) {
-    color: $kolor;
+    color      : $kolor;
     font-family: 'Nunito';
-    font-size: $tatama;
-    border: 3px $borde-principal map-get($colores, color-cuarto)
-};
+    font-size  : $tatama;
+    border     : 3px $borde-principal map-get($colores, color-cuarto)
+}
+
+;
 
 @mixin cuerpo ($dimension, $colur) {
     font-family: 'Nunito';
     font-size  : $dimension;
     color      : $colur;
-    text-align : center;  
-};
+    text-align : center;
+}
 
-@mixin cuer ($size, $disi){
-    font-size       : $size;
-    color           : $disi;
-    text-align      : center;
-};
+;
 
-@mixin card ($bolde, $fon, $cul, $tran){
-    width: 18rem;
-    margin: map-get($margen, dos);
-    border-radius: map-get($radius, dos);
-    border: $bolde;
+@mixin cuer ($size, $disi) {
+    font-size : $size;
+    color     : $disi;
+    text-align: center;
+}
+
+;
+
+@mixin card ($bolde, $fon, $cul, $tran) {
+    width           : 18rem;
+    margin          : map-get($margen, dos);
+    border-radius   : map-get($radius, dos);
+    border          : $bolde;
     background-color: $fon;
-    color: $cul;
-    font-family: 'Nunito';
-    transition: $tran;
-};
+    color           : $cul;
+    font-family     : 'Nunito';
+    transition      : $tran;
+}
+
+;
 
 @mixin nosotrosdiv ($grosol) {
-    color      : #006399;
-    text-align : left;
-    font-family: 'Nunito';
-    font-size  : 1rem;
-    font-weight: $grosol;
-    text-shadow: 1px;
+    color       : #006399;
+    text-align  : left;
+    font-family : 'Nunito';
+    font-size   : 1rem;
+    font-weight : $grosol;
+    text-shadow : 1px;
     margin-right: 1.5rem;
-    margin-left: 1.5rem;
-    line-height: 1.5rem;
-};
+    margin-left : 1.5rem;
+    line-height : 1.5rem;
+}
 
-@mixin nosotrosmov ($malgin){
+;
+
+@mixin nosotrosmov ($malgin) {
     font-family: sans-serif;
     font-size  : 1.5rem;
     margin     : $malgin;
-    color      : #E7690C;    
-};
+    color      : #E7690C;
+}
 
-@mixin nosdiv ($malgen){
-    text-align : map-get($alineacion-texto, justificado);
-    font-family: 'Nunito';
-    font-size  : map-get($tamanio-tipografia, texto);
-    font-weight: $grosor-principal;
-    text-shadow: 1px;
-    color      : map-get($colores, color-secundario);
-    margin     : $malgen;
-    line-height: 1.5rem;
-};
+;
 
-@mixin nosv ($los){
+@mixin nosdiv ($malgen) {
+    text-align  : map-get($alineacion-texto, justificado);
+    font-family : 'Nunito';
+    font-size   : map-get($tamanio-tipografia, texto);
+    font-weight : $grosor-principal;
+    text-shadow : 1px;
+    color       : map-get($colores, color-secundario);
+    margin-right: $malgen;
+    margin-left : 1.5rem;
+    line-height : 1.5rem;
+}
+
+;
+
+@mixin nosv ($los) {
     font-family: sans-serif;
     font-size  : 1.5rem;
     margin     : 0.5rem;
-    color      : $los;  
-};
+    color      : $los;
+}
+
+;
 
 @mixin mando ($alin, $col, $tipo) {
-    text-align: $alin;
+    text-align : $alin;
     font-family: 'Nunito';
-    color: $col;
-    font-size: $tipo;
-};
+    color      : $col;
+    font-size  : $tipo;
+}
+
+;
 
 @mixin grid ($filas, $medida) {
-    display: grid;
+    display              : grid;
     grid-template-columns: $filas;
     grid-template-rows   : $medida;
-};
+}
+
+;
 
 @mixin forma ($wdt, $malf) {
-    width: $wdt;
-    height: 26rem;
-    border: 5px $borde-principal map-get($colores, color-cuarto);
-    margin-left: $malf;   
-};
+    width      : $wdt;
+    height     : 26rem;
+    border     : 5px $borde-principal map-get($colores, color-cuarto);
+    margin-left: $malf;
+}
+
+;
 
 @mixin info ($tam) {
     font-family: 'Nunito';
     font-size  : $tam;
     margin     : 10px;
     line-height: 30px;
-};
+}
+
+;
 
 @mixin contacto ($ali, $taman) {
-    text-align: $ali;
+    text-align : $ali;
     font-family: 'Nunito';
-    font-size: $taman;
-};
+    font-size  : $taman;
+}
+
+;
 
 @mixin form-textin ($relleno) {
-    width: 400px;
-    padding: $relleno;
-    border: 3px $borde-principal map-get($colores, color-principal);
-    border-radius: 3px;
+    width           : 400px;
+    padding         : $relleno;
+    border          : 3px $borde-principal map-get($colores, color-principal);
+    border-radius   : 3px;
     background-color: map-get($color-fondo, fondo-terciario);
-    margin: 8px 0;
-};
+    margin          : 8px 0;
+}
+
+;
 
 @mixin form-input ($width, $padding, $color) {
-    width: $width;
-    padding: $padding;
-    border: 1px $borde-principal black;
-    border-radius: 5px;
-    margin-top: 2rem;
+    width           : $width;
+    padding         : $padding;
+    border          : 1px $borde-principal black;
+    border-radius   : 5px;
+    margin-top      : 2rem;
     background-color: map-get($colores, color-principal);
-    color: $color;
-    display: block;
-};
+    color           : $color;
+    display         : block;
+}
+
+;

@@ -395,7 +395,8 @@
     font-weight: 600;
     text-shadow: 1px;
     color: #006399;
-    margin: 1rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
     line-height: 1.5rem; }
   .nos__vision {
     font-family: sans-serif;
@@ -409,7 +410,8 @@
     font-weight: 600;
     text-shadow: 1px;
     color: #006399;
-    margin: 1rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
     line-height: 1.5rem; }
   .nos__mision {
     font-family: sans-serif;
@@ -423,7 +425,8 @@
     font-weight: 600;
     text-shadow: 1px;
     color: #006399;
-    margin: 1rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
     line-height: 1.5rem; }
   .nos__obj {
     font-family: sans-serif;
